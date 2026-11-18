@@ -1,12 +1,708 @@
-21a9e41 2026-11-18 10:21:56 +0700 docs: ready-to-post GitHub issues (11), create-issues script, demo script, screenshots for API bugs
-ae5dbdf 2026-11-18 10:19:21 +0700 chore: add 9 Playwright HTML reports (3 features x 3 browsers) with "Run by: 23120034" header
-bca19b7 2026-11-18 10:19:15 +0700 docs: README summary, bug report with screenshots, review/gap analysis, AI audit log
-4025b3f 2026-11-18 10:19:15 +0700 fix(FR-17): handle alert dialogs in a listener - login tests hung for 40s
-a48eb8a 2026-11-18 10:19:15 +0700 test(FR-17): list, delete, admin login and access-control tests
-fd41f74 2026-11-18 10:19:15 +0700 test(FR-17): data-driven coupon creation rules (15 cases)
-40f548e 2026-11-18 10:19:14 +0700 test(FR-09): expiry-date boundary (yesterday / today / tomorrow) for condition C2
-bffa926 2026-11-18 10:19:14 +0700 fix(FR-09): e2e test - navigate inside the SPA and tolerate ignored first add-to-cart click
-1ace0fb 2026-11-18 10:19:14 +0700 test(FR-09): coupon rules C1..C5 data-driven (17 cases), UI state and e2e checkout
-e24256c 2026-11-18 10:19:14 +0700 test(FR-04): read-only email, role escalation, API validation and session tests
-bd085cb 2026-11-18 10:19:13 +0700 test(FR-04): data-driven profile validation (13 cases: phone boundaries, name, address)
-a92db5d 2026-11-18 10:19:13 +0700 chore: scaffold Playwright project (3 browsers, "Run by" report title, helpers, matrix runner)
+commit 2ecfa0f525aea2d34ce949245a3363a82f6e8e1c
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 12:50:29 2026 +0700
+
+    docs: main report (md+pdf), AI audit report with verbatim prompts, AI critique pdf
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/README.md             |   2 +
+ hw04-automation/REPORT.md             | 222 ++++++++++++++++++++++++++++++++++
+ hw04-automation/REPORT.pdf            | Bin 0 -> 102020 bytes
+ hw04-automation/docs/ai-audit-log.md  |  94 ++++++++++----
+ hw04-automation/docs/ai-audit-log.pdf | Bin 0 -> 86611 bytes
+ hw04-automation/docs/ai-critique.md   |   4 +
+ hw04-automation/docs/ai-critique.pdf  | Bin 0 -> 40698 bytes
+ 7 files changed, 299 insertions(+), 23 deletions(-)
+
+commit 510647eefe7c6bc3f766954d960d29906105139d
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 12:32:30 2026 +0700
+
+    docs: add Agent Skill playwright-datadriven-automation, fix test count in audit log
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ .../playwright-datadriven-automation/SKILL.md      | 76 ++++++++++++++++++++++
+ .../templates/ai-audit-log.md                      | 14 ++++
+ .../templates/bug-report.md                        | 18 +++++
+ .../templates/create-issues.js                     | 42 ++++++++++++
+ .../templates/feature-data.json                    |  8 +++
+ .../templates/feature.spec.js                      | 40 ++++++++++++
+ .../templates/helpers/api.js                       | 23 +++++++
+ .../templates/helpers/data.js                      |  9 +++
+ .../templates/helpers/env.js                       |  8 +++
+ .../templates/issue.md                             | 19 ++++++
+ .../templates/playwright.config.js                 | 40 ++++++++++++
+ .../templates/run-matrix.js                        | 27 ++++++++
+ hw04-automation/docs/ai-audit-log.md               |  2 +-
+ 13 files changed, 325 insertions(+), 1 deletion(-)
+
+commit 13909efa75d61e9639e9fe60a360f9ce98b7a9c6
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:21:57 2026 +0700
+
+    docs: add git commit log (text)
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/git-log.txt | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit 21a9e4126fa03c62a07a2df2c5167f0b1d29c538
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:21:56 2026 +0700
+
+    docs: ready-to-post GitHub issues (11), create-issues script, demo script, screenshots for API bugs
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/README.md                          |   5 +-
+ hw04-automation/docs/bug-report.md                 |  11 ++-
+ hw04-automation/docs/demo-script.md                |  96 +++++++++++++++++++++
+ hw04-automation/docs/issues/BUG-01.md              |  23 +++++
+ hw04-automation/docs/issues/BUG-02.md              |  23 +++++
+ hw04-automation/docs/issues/BUG-03.md              |  23 +++++
+ hw04-automation/docs/issues/BUG-04.md              |  21 +++++
+ hw04-automation/docs/issues/BUG-05.md              |  22 +++++
+ hw04-automation/docs/issues/BUG-06.md              |  22 +++++
+ hw04-automation/docs/issues/BUG-07.md              |  22 +++++
+ hw04-automation/docs/issues/BUG-08.md              |  24 ++++++
+ hw04-automation/docs/issues/BUG-09.md              |  22 +++++
+ hw04-automation/docs/issues/BUG-10.md              |  22 +++++
+ hw04-automation/docs/issues/BUG-11.md              |  23 +++++
+ .../docs/screenshots/BUG-03_TC-04-15_report.png    | Bin 0 -> 63798 bytes
+ .../docs/screenshots/BUG-04_TC-04-16_report.png    | Bin 0 -> 69536 bytes
+ .../docs/screenshots/BUG-11_TC-17-22_report.png    | Bin 0 -> 66548 bytes
+ hw04-automation/scripts/create-issues.js           |  42 +++++++++
+ 18 files changed, 393 insertions(+), 8 deletions(-)
+
+commit ae5dbdf3a62e323288d60aa724b0f1fc555d8495
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:21 2026 +0700
+
+    chore: add 9 Playwright HTML reports (3 features x 3 browsers) with "Run by: 23120034" header
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/reports/dev-date/html/index.html   |   49 +
+ hw04-automation/reports/dev-date/results.json      |  295 +++++
+ .../0a30ef54f4e41a0759f76b42dbb1659e0dca1928.zip   |  Bin 0 -> 220845 bytes
+ .../0b906539ab404727f7f81cfc1dafc3cbb3a2f52e.png   |  Bin 0 -> 26920 bytes
+ .../154b382f9e6878a34f7ed723772b1d05ebd58ef1.md    |  205 +++
+ .../24673500610a44928c09ec6dbc2804d1faf867ee.md    |  200 +++
+ .../2f6f2726a4a623b5f1fe47c41ae98feb8eb2c4d9.md    |  162 +++
+ .../35800a540bfc2087e4d498091d47e6dbc0099baf.zip   |  Bin 0 -> 220963 bytes
+ .../398be568f0c96f49a6702ec5290990549b1fbe8d.md    |  205 +++
+ .../401ca0faaa9825c3e8e75e5c30ac4772ab404561.md    |  205 +++
+ .../58bf4fa1d3ea553fde45a43a696d7f29eee3671d.zip   |  Bin 0 -> 242015 bytes
+ .../5cae96fb75df16db6911f3538ce0d256164fc00c.png   |  Bin 0 -> 27150 bytes
+ .../5cb7cd666f58b8b3587965d72fdd68aab2d5595f.png   |  Bin 0 -> 26676 bytes
+ .../7e355dc597b1a383df2070d7b6f25ca2c2099f39.zip   |  Bin 0 -> 220260 bytes
+ .../7f457dd187d3adb3ab6acb888819427c009b32ba.md    |  205 +++
+ .../8fb0a02cd60316da15f72b5177c07c6f46cdc3c3.zip   |  Bin 0 -> 241438 bytes
+ .../96d6e4a2a699243289099fe055b35a63b5c8a70c.md    |  205 +++
+ .../9d0cced85fedcb2f31824e2e093c26e2072195ed.png   |  Bin 0 -> 30339 bytes
+ .../b0806f7558bd7f52aaf9385c9e65b773424c79cc.zip   |  Bin 0 -> 221853 bytes
+ .../b5a9638d40216527c2b72ea4b80b380509b1d9ff.zip   |  Bin 0 -> 13018 bytes
+ .../b75a3c0abf042a15c2d444d10fccb85faed2140a.png   |  Bin 0 -> 26968 bytes
+ .../be8cc5eb7798fd047a2daccee1c2249842a8f338.md    |  205 +++
+ .../c0643a7ad3a7dd9e728b611626e8e2b15a3db618.png   |  Bin 0 -> 26570 bytes
+ .../c2b68e3aedf3de0c0339bd780142d32e0a846ee3.zip   |  Bin 0 -> 238732 bytes
+ .../d5be9c96e065bac0e1b57ee27f5bb930696a3039.md    |  200 +++
+ .../da89eccbae4f4e786999f3ae45c86823b757a49c.png   |  Bin 0 -> 26648 bytes
+ .../e39cb31d41f5698667970b933bc7ca7cde87543c.png   |  Bin 0 -> 26746 bytes
+ .../e3fd6e50d38b5353cbc020122413b46d55a36b0e.md    |  152 +++
+ .../ed06e16e44b422536c78722966f702a8bfbfff60.zip   |  Bin 0 -> 219762 bytes
+ .../f3d95a6249612b8d8e99da6a18afec5a2b8f5b6a.zip   |  Bin 0 -> 14185 bytes
+ .../reports/fr04-chromium/html/index.html          |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr04-chromium/html/trace/codicon.DCmgc-ay.ttf  |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr04-chromium/html/trace/index.BY2vkw8A.js     |    1 +
+ .../fr04-chromium/html/trace/index.B_TqY17P.css    |    1 +
+ .../reports/fr04-chromium/html/trace/index.html    |   45 +
+ .../fr04-chromium/html/trace/manifest.webmanifest  |   16 +
+ .../fr04-chromium/html/trace/playwright-logo.svg   |    9 +
+ .../fr04-chromium/html/trace/snapshot.-ChLTbql.js  |    1 +
+ .../reports/fr04-chromium/html/trace/snapshot.html |   10 +
+ .../reports/fr04-chromium/html/trace/sw.bundle.js  |    4 +
+ .../fr04-chromium/html/trace/uiMode.CyMfwkXJ.css   |    1 +
+ .../fr04-chromium/html/trace/uiMode.DuLwZHRf.js    |    5 +
+ .../reports/fr04-chromium/html/trace/uiMode.html   |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr04-chromium/results.json | 1235 ++++++++++++++++++
+ .../07e51cce3c1ecc6e2f3a4ad2e8428305403c5db8.png   |  Bin 0 -> 33125 bytes
+ .../154b382f9e6878a34f7ed723772b1d05ebd58ef1.md    |  205 +++
+ .../205d488df840aad20e8f7eb4b6e2e83ddbca434d.zip   |  Bin 0 -> 630170 bytes
+ .../24673500610a44928c09ec6dbc2804d1faf867ee.md    |  200 +++
+ .../2f6f2726a4a623b5f1fe47c41ae98feb8eb2c4d9.md    |  162 +++
+ .../3068cf0f0d0efb32c606feaa0db6524aa1073239.zip   |  Bin 0 -> 611210 bytes
+ .../32f4e003ecf2c50296c28c4f2baab1565a3103d3.zip   |  Bin 0 -> 532419 bytes
+ .../398be568f0c96f49a6702ec5290990549b1fbe8d.md    |  205 +++
+ .../401ca0faaa9825c3e8e75e5c30ac4772ab404561.md    |  205 +++
+ .../42220e879de52746db7a7af3e1728628389831e0.zip   |  Bin 0 -> 646783 bytes
+ .../69e479125f3cf5f6fd2426b7d081c0d5614b7e9d.zip   |  Bin 0 -> 510134 bytes
+ .../74a30ab59befa0cd3a782cf70bd5dbef376b7148.png   |  Bin 0 -> 35667 bytes
+ .../7db96203b3b3e4f8c946808290813d2d60f1be72.png   |  Bin 0 -> 33201 bytes
+ .../7f457dd187d3adb3ab6acb888819427c009b32ba.md    |  205 +++
+ .../84dc5dfdb28992d03d23040a483afd946419b6d6.zip   |  Bin 0 -> 644360 bytes
+ .../91f41e9d52d308a2e731be150adcf34a91070366.png   |  Bin 0 -> 33550 bytes
+ .../96d6e4a2a699243289099fe055b35a63b5c8a70c.md    |  205 +++
+ .../99fbf82a9b8b4c3fab31df72bba9582cb52a6e34.png   |  Bin 0 -> 33200 bytes
+ .../a13131de7bce585e959aabc27e4c39e7c1e75bd7.png   |  Bin 0 -> 33532 bytes
+ .../a2564d240b99479f167706eb07799202e16e2712.png   |  Bin 0 -> 33279 bytes
+ .../a898940eba64538bf180f53a7051a328daa6d74c.png   |  Bin 0 -> 33378 bytes
+ .../ab25dc831de7f8703d4c5f6e7618f12242363ec2.zip   |  Bin 0 -> 590196 bytes
+ .../be8cc5eb7798fd047a2daccee1c2249842a8f338.md    |  205 +++
+ .../d5be9c96e065bac0e1b57ee27f5bb930696a3039.md    |  200 +++
+ .../e3fd6e50d38b5353cbc020122413b46d55a36b0e.md    |  152 +++
+ .../f392ba8dd20f6dba94a8f4c3c50048af0ddf66c0.zip   |  Bin 0 -> 12961 bytes
+ .../f54892ef925eaabd582f4fd7583c6598a2fca1d7.zip   |  Bin 0 -> 14177 bytes
+ .../fc0e8e94df8ecf147beab3dfc630131936dd2b11.zip   |  Bin 0 -> 573316 bytes
+ .../reports/fr04-firefox/html/index.html           |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr04-firefox/html/trace/codicon.DCmgc-ay.ttf   |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr04-firefox/html/trace/index.BY2vkw8A.js      |    1 +
+ .../fr04-firefox/html/trace/index.B_TqY17P.css     |    1 +
+ .../reports/fr04-firefox/html/trace/index.html     |   45 +
+ .../fr04-firefox/html/trace/manifest.webmanifest   |   16 +
+ .../fr04-firefox/html/trace/playwright-logo.svg    |    9 +
+ .../fr04-firefox/html/trace/snapshot.-ChLTbql.js   |    1 +
+ .../reports/fr04-firefox/html/trace/snapshot.html  |   10 +
+ .../reports/fr04-firefox/html/trace/sw.bundle.js   |    4 +
+ .../fr04-firefox/html/trace/uiMode.CyMfwkXJ.css    |    1 +
+ .../fr04-firefox/html/trace/uiMode.DuLwZHRf.js     |    5 +
+ .../reports/fr04-firefox/html/trace/uiMode.html    |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr04-firefox/results.json  | 1235 ++++++++++++++++++
+ .../263b4a6af053b35cbaad9cdb49cca16bbac430da.md    |  205 +++
+ .../2c59b4d607d697bc8dfec22f98ab9d7aeaa70f76.png   |  Bin 0 -> 74502 bytes
+ .../2ce82d6721a810edf49cf6dea35a2d63cd5e632b.png   |  Bin 0 -> 75378 bytes
+ .../2f6f2726a4a623b5f1fe47c41ae98feb8eb2c4d9.md    |  162 +++
+ .../30c20b401357fae0fdb0b9fc5d5ef06605e6f8bf.png   |  Bin 0 -> 74634 bytes
+ .../36fc0c537fb2d03a15f25bc5c12bfdfc094aa5d8.zip   |  Bin 0 -> 192250 bytes
+ .../39c0013db6b0275a3b00900c3474d597395d3c4b.zip   |  Bin 0 -> 209431 bytes
+ .../410f4d68b7a1df1878a4f9c69df168c7d5f23f61.md    |  205 +++
+ .../436106757ef41c84e7468aab75c1bb061857d42b.png   |  Bin 0 -> 78494 bytes
+ .../4edc5abe0c53144e83721e502763266302d34907.png   |  Bin 0 -> 74288 bytes
+ .../5de16ed89692e31184894ae6186afe493d1685e8.zip   |  Bin 0 -> 205562 bytes
+ .../682193ffed753455d312c69ef70bafd3f575c9f8.md    |  200 +++
+ .../6b80fb222eb6adda3bc8905850daa7bae01606e7.zip   |  Bin 0 -> 204060 bytes
+ .../6f36e52a1af267c054c8aabaee09e5a0911d8f69.png   |  Bin 0 -> 74061 bytes
+ .../70496b39518e812e54a5cac7dfeb914e2869975c.zip   |  Bin 0 -> 224887 bytes
+ .../883acae3e1ea8d099b81ea664f914972a0d0257b.png   |  Bin 0 -> 73782 bytes
+ .../8a3d5ef53c66c7154a2ad1f122a10d70455a27ad.zip   |  Bin 0 -> 14209 bytes
+ .../8bfaa10d17e94d8c6d0d6aeb0960cb0ef7790d0a.zip   |  Bin 0 -> 203836 bytes
+ .../8e78692c318dea67217568a91a6c73451014e60a.md    |  205 +++
+ .../b2956dd168b5379aeba47c652606b61935e98056.md    |  205 +++
+ .../b535c2354e81d9d1e76f2c2f22c36dc2bca483e7.zip   |  Bin 0 -> 203707 bytes
+ .../c9e482ef67dac79a07417980235d358c8c29646f.zip   |  Bin 0 -> 13000 bytes
+ .../dd2a88a0426fc59f337971e6f60f84bdf3add1eb.md    |  205 +++
+ .../e3fd6e50d38b5353cbc020122413b46d55a36b0e.md    |  152 +++
+ .../e53986c155d058992dcc05483905ff6d2043820b.zip   |  Bin 0 -> 205850 bytes
+ .../e6298276351dcfdc62d619afdd90d03f63aac075.png   |  Bin 0 -> 74006 bytes
+ .../f647f88afc66683a7c430cf1f5ef2d18f8b9c589.md    |  200 +++
+ .../fac7bbb8f50aeb538752a31591696068a59efc99.md    |  205 +++
+ .../reports/fr04-webkit/html/index.html            |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr04-webkit/html/trace/codicon.DCmgc-ay.ttf    |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr04-webkit/html/trace/index.BY2vkw8A.js       |    1 +
+ .../fr04-webkit/html/trace/index.B_TqY17P.css      |    1 +
+ .../reports/fr04-webkit/html/trace/index.html      |   45 +
+ .../fr04-webkit/html/trace/manifest.webmanifest    |   16 +
+ .../fr04-webkit/html/trace/playwright-logo.svg     |    9 +
+ .../fr04-webkit/html/trace/snapshot.-ChLTbql.js    |    1 +
+ .../reports/fr04-webkit/html/trace/snapshot.html   |   10 +
+ .../reports/fr04-webkit/html/trace/sw.bundle.js    |    4 +
+ .../fr04-webkit/html/trace/uiMode.CyMfwkXJ.css     |    1 +
+ .../fr04-webkit/html/trace/uiMode.DuLwZHRf.js      |    5 +
+ .../reports/fr04-webkit/html/trace/uiMode.html     |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr04-webkit/results.json   | 1235 ++++++++++++++++++
+ .../09a6f69471d3d5de20a3363f8d300d0c0cd789ce.png   |  Bin 0 -> 30823 bytes
+ .../2b0102d1fb706c62bca362ecf2f7ac6a9b97efc1.zip   |  Bin 0 -> 246390 bytes
+ .../2c7734689bd148fa44c0c7394c3d759ffec2cfe1.zip   |  Bin 0 -> 185074 bytes
+ .../38969cdaa448eefae74c162c014cc14fd27627af.md    |  216 ++++
+ .../3de25f96418f458fcf03a4e0913d233d34e9f95e.md    |  227 ++++
+ .../447c391d8c3de373ce17a800855aa483ac521253.png   |  Bin 0 -> 29242 bytes
+ .../455b7c0e059ada2a3b1156baa00f88de41387c6f.md    |  216 ++++
+ .../5772adc397c68f4280bcd3fa90376689fe41db0f.md    |  210 +++
+ .../6cd21fb2656a82f52d07bd7f6cd3bbf65ddfef88.png   |  Bin 0 -> 29379 bytes
+ .../71900d8e85cb8ae9fcb292d845b11eb90f3cba8e.png   |  Bin 0 -> 31091 bytes
+ .../96f598527cfc25f84d15706a1ab951573561f462.zip   |  Bin 0 -> 232756 bytes
+ .../97adea3772091b27f3c2c18099a959c21ecbc5e6.md    |  210 +++
+ .../99aa981c2111292893071aa0bdb73fd29cb0a752.zip   |  Bin 0 -> 209504 bytes
+ .../9f58aaa9a0c9da98effa3309183065c791301325.zip   |  Bin 0 -> 233765 bytes
+ .../ade63e5d0949ab2d2d287e2c125f216e8af3ec87.png   |  Bin 0 -> 29288 bytes
+ .../badf8cf767d1eeffa1c3055675c650a2c9a76ceb.md    |  210 +++
+ .../bd8954359e73b83c25ec97f8037572fed8ccb76a.png   |  Bin 0 -> 30071 bytes
+ .../d79ab723faa32cf71140d86c7ba3f3628f1eb358.md    |  216 ++++
+ .../ee2ded49ce8215f56b646a785c7ca3743f61f181.zip   |  Bin 0 -> 246685 bytes
+ .../f6f226c7f7ee19c2e438a8ae56d8003911ffd3c6.zip   |  Bin 0 -> 251375 bytes
+ .../reports/fr09-chromium/html/index.html          |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr09-chromium/html/trace/codicon.DCmgc-ay.ttf  |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr09-chromium/html/trace/index.BY2vkw8A.js     |    1 +
+ .../fr09-chromium/html/trace/index.B_TqY17P.css    |    1 +
+ .../reports/fr09-chromium/html/trace/index.html    |   45 +
+ .../fr09-chromium/html/trace/manifest.webmanifest  |   16 +
+ .../fr09-chromium/html/trace/playwright-logo.svg   |    9 +
+ .../fr09-chromium/html/trace/snapshot.-ChLTbql.js  |    1 +
+ .../reports/fr09-chromium/html/trace/snapshot.html |   10 +
+ .../reports/fr09-chromium/html/trace/sw.bundle.js  |    4 +
+ .../fr09-chromium/html/trace/uiMode.CyMfwkXJ.css   |    1 +
+ .../fr09-chromium/html/trace/uiMode.DuLwZHRf.js    |    5 +
+ .../reports/fr09-chromium/html/trace/uiMode.html   |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr09-chromium/results.json | 1361 ++++++++++++++++++++
+ .../195daef57887f7b3541e1d0cf1b580dc364cf2b4.png   |  Bin 0 -> 30483 bytes
+ .../220e488ac884173e451a9c706b8d6e732060ffc8.zip   |  Bin 0 -> 944427 bytes
+ .../237346f17df7bc004c357dfcae5696580700eea9.zip   |  Bin 0 -> 1087894 bytes
+ .../2d329109c0a8888d69c0300d3512a350049ef17b.md    |  216 ++++
+ .../3727e3e7d77003bba80279f37a9923804bfd21a6.zip   |  Bin 0 -> 901917 bytes
+ .../3c00ad4f59ad99ead8028769a725ab49f534215b.png   |  Bin 0 -> 31669 bytes
+ .../3cf33891983e9f7a8e899ec029161e2076aa505e.png   |  Bin 0 -> 30546 bytes
+ .../3de25f96418f458fcf03a4e0913d233d34e9f95e.md    |  227 ++++
+ .../5772adc397c68f4280bcd3fa90376689fe41db0f.md    |  210 +++
+ .../97adea3772091b27f3c2c18099a959c21ecbc5e6.md    |  210 +++
+ .../9dd254405c0fb935d74d6cf3a718e99781cb83a3.png   |  Bin 0 -> 30464 bytes
+ .../a84ded5ac2d1a7a4e603644792ce88558debd574.md    |  216 ++++
+ .../af7d31514546f3e5b49291c96af64796b6ebebd0.zip   |  Bin 0 -> 958221 bytes
+ .../b3c36e7c7729ac986270577be3ed1a913676f03b.md    |  216 ++++
+ .../badf8cf767d1eeffa1c3055675c650a2c9a76ceb.md    |  210 +++
+ .../c29cf40bcb60578b74b50183795884dbbefd4afb.png   |  Bin 0 -> 30968 bytes
+ .../d50a93f8df64c8dc1445546bc8ca0745b0cf894b.zip   |  Bin 0 -> 1151147 bytes
+ .../e2d5b68566038ff630e588c5ec4d0b115743e5f4.png   |  Bin 0 -> 31899 bytes
+ .../f116ce62cb535d71293dc96d83a072d28c6dd849.zip   |  Bin 0 -> 963353 bytes
+ .../f4da1a0c1a6155ebf14cdd57cf6a3e36fae6e514.zip   |  Bin 0 -> 981816 bytes
+ .../reports/fr09-firefox/html/index.html           |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr09-firefox/html/trace/codicon.DCmgc-ay.ttf   |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr09-firefox/html/trace/index.BY2vkw8A.js      |    1 +
+ .../fr09-firefox/html/trace/index.B_TqY17P.css     |    1 +
+ .../reports/fr09-firefox/html/trace/index.html     |   45 +
+ .../fr09-firefox/html/trace/manifest.webmanifest   |   16 +
+ .../fr09-firefox/html/trace/playwright-logo.svg    |    9 +
+ .../fr09-firefox/html/trace/snapshot.-ChLTbql.js   |    1 +
+ .../reports/fr09-firefox/html/trace/snapshot.html  |   10 +
+ .../reports/fr09-firefox/html/trace/sw.bundle.js   |    4 +
+ .../fr09-firefox/html/trace/uiMode.CyMfwkXJ.css    |    1 +
+ .../fr09-firefox/html/trace/uiMode.DuLwZHRf.js     |    5 +
+ .../reports/fr09-firefox/html/trace/uiMode.html    |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr09-firefox/results.json  | 1361 ++++++++++++++++++++
+ .../0008fa30a8692e6a4f6370ffaba4e056efcb1a43.zip   |  Bin 0 -> 179687 bytes
+ .../09d17e1fce7cdc8f91656c2fe34e20c667c0ddd7.zip   |  Bin 0 -> 149211 bytes
+ .../212a1b3355d7e8e71cad40d3670a990aaf571983.png   |  Bin 0 -> 77482 bytes
+ .../2d329109c0a8888d69c0300d3512a350049ef17b.md    |  216 ++++
+ .../3de25f96418f458fcf03a4e0913d233d34e9f95e.md    |  227 ++++
+ .../5772adc397c68f4280bcd3fa90376689fe41db0f.md    |  210 +++
+ .../72b6d84b1e9127332dc462e32aa5c0b0c6176733.png   |  Bin 0 -> 73822 bytes
+ .../7ada4498391924b6da4230ef7007d9537218f59c.png   |  Bin 0 -> 73469 bytes
+ .../864423cb3f67d2ca5b419ce836b66795299b6dbe.zip   |  Bin 0 -> 191757 bytes
+ .../8f3ef21e5deba5ea2110dc0bf709a84c795ea26d.zip   |  Bin 0 -> 185316 bytes
+ .../97adea3772091b27f3c2c18099a959c21ecbc5e6.md    |  210 +++
+ .../a590b8f8fa37451db8692ec1ace1e231a789fc2b.png   |  Bin 0 -> 73464 bytes
+ .../a84ded5ac2d1a7a4e603644792ce88558debd574.md    |  216 ++++
+ .../a92db7ca37c170107fdd3a9ca15c6de8709ce2ea.zip   |  Bin 0 -> 203398 bytes
+ .../b3c36e7c7729ac986270577be3ed1a913676f03b.md    |  216 ++++
+ .../b98a799145895b5352b0eaa632662fedd9957177.zip   |  Bin 0 -> 189618 bytes
+ .../badf8cf767d1eeffa1c3055675c650a2c9a76ceb.md    |  210 +++
+ .../d869e4c361843c39609dca279d7c420d545d4afa.png   |  Bin 0 -> 74760 bytes
+ .../e0d93b9c95fc76ae2c9b1234f8d75bf588d27e11.png   |  Bin 0 -> 77662 bytes
+ .../e496a910448b0614b8b0a9ba0a4f56e33619cb14.zip   |  Bin 0 -> 174190 bytes
+ .../reports/fr09-webkit/html/index.html            |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr09-webkit/html/trace/codicon.DCmgc-ay.ttf    |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr09-webkit/html/trace/index.BY2vkw8A.js       |    1 +
+ .../fr09-webkit/html/trace/index.B_TqY17P.css      |    1 +
+ .../reports/fr09-webkit/html/trace/index.html      |   45 +
+ .../fr09-webkit/html/trace/manifest.webmanifest    |   16 +
+ .../fr09-webkit/html/trace/playwright-logo.svg     |    9 +
+ .../fr09-webkit/html/trace/snapshot.-ChLTbql.js    |    1 +
+ .../reports/fr09-webkit/html/trace/snapshot.html   |   10 +
+ .../reports/fr09-webkit/html/trace/sw.bundle.js    |    4 +
+ .../fr09-webkit/html/trace/uiMode.CyMfwkXJ.css     |    1 +
+ .../fr09-webkit/html/trace/uiMode.DuLwZHRf.js      |    5 +
+ .../reports/fr09-webkit/html/trace/uiMode.html     |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr09-webkit/results.json   | 1361 ++++++++++++++++++++
+ .../02390dc4012678a290625d7d4559e080dd0c7b5e.md    |  297 +++++
+ .../043f492a95fa4588136607f6e79fc9355b6d8903.md    |  297 +++++
+ .../074068ddad306a1ee50e11d143bbb16fc0954e65.zip   |  Bin 0 -> 14922 bytes
+ .../1dbf0d04b96b68078860375077d3148f31ac4561.png   |  Bin 0 -> 45664 bytes
+ .../20c0b96077dda14cb3ebe5e759ec6b9ec619f764.zip   |  Bin 0 -> 15973 bytes
+ .../34bdcdc0bf0e52d7b6f033f002b114015d09e419.png   |  Bin 0 -> 45633 bytes
+ .../6f09e2a49ff2accbfe057fa3a4d18202b2dc8ddd.md    |  131 ++
+ .../79fbff810e54db97152f41ba6774e800af30dfad.md    |  297 +++++
+ .../884f58746cae72b55169bc12294fd05a40c6cf41.png   |  Bin 0 -> 45644 bytes
+ .../b79b9d62042b5b2e6913155385e90da49f1017c9.zip   |  Bin 0 -> 553821 bytes
+ .../b811ca5b62b6359f7ca576e30c51908f8be3ba95.zip   |  Bin 0 -> 587812 bytes
+ .../c1bfed1330c99c251a9dc8582ed0560a32fd8977.png   |  Bin 0 -> 45119 bytes
+ .../c251a56b9fbff13b657548e9215d0122cb6f0d53.md    |  297 +++++
+ .../c86d79f70fbe78c5a4d3b69ca93ea09f1681e87d.zip   |  Bin 0 -> 619147 bytes
+ .../ea2dc2b4b939fe6904f0d4ba60e153434b11170d.md    |  146 +++
+ .../fd4bcbdd107be060b53af30d2382169b390248d6.zip   |  Bin 0 -> 515206 bytes
+ .../reports/fr17-chromium/html/index.html          |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr17-chromium/html/trace/codicon.DCmgc-ay.ttf  |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr17-chromium/html/trace/index.BY2vkw8A.js     |    1 +
+ .../fr17-chromium/html/trace/index.B_TqY17P.css    |    1 +
+ .../reports/fr17-chromium/html/trace/index.html    |   45 +
+ .../fr17-chromium/html/trace/manifest.webmanifest  |   16 +
+ .../fr17-chromium/html/trace/playwright-logo.svg   |    9 +
+ .../fr17-chromium/html/trace/snapshot.-ChLTbql.js  |    1 +
+ .../reports/fr17-chromium/html/trace/snapshot.html |   10 +
+ .../reports/fr17-chromium/html/trace/sw.bundle.js  |    4 +
+ .../fr17-chromium/html/trace/uiMode.CyMfwkXJ.css   |    1 +
+ .../fr17-chromium/html/trace/uiMode.DuLwZHRf.js    |    5 +
+ .../reports/fr17-chromium/html/trace/uiMode.html   |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr17-chromium/results.json | 1211 +++++++++++++++++
+ .../3b5d0430e3db6e93eb6320bbaf77b631e7944094.md    |  297 +++++
+ .../435b62610548fdcdeb820278432976a5c7d26efc.md    |  297 +++++
+ .../4db5780116ac3c91980698f66c0afd0f01b04afd.png   |  Bin 0 -> 46508 bytes
+ .../5916cbe53333bf999312b8dd27a6da3601704dfd.zip   |  Bin 0 -> 1031972 bytes
+ .../5a7360841fcc56b4aa98cbc11687188816234d78.png   |  Bin 0 -> 47028 bytes
+ .../6265fd1a0dafb258ce5c3d8562fdf258fa5a088e.zip   |  Bin 0 -> 14877 bytes
+ .../6a488d15ae79b33e098f43167dc2611969d0b268.md    |  297 +++++
+ .../6ca16e4425e282a135c1b8dafb0a1926fbadb928.zip   |  Bin 0 -> 987663 bytes
+ .../6f09e2a49ff2accbfe057fa3a4d18202b2dc8ddd.md    |  131 ++
+ .../a736dbc43eecf4b89ea3b22d4d1e8911091291d0.png   |  Bin 0 -> 47208 bytes
+ .../cf4bad31a74a674ab72717c854e1ad14c23f720a.zip   |  Bin 0 -> 15974 bytes
+ .../ea2dc2b4b939fe6904f0d4ba60e153434b11170d.md    |  146 +++
+ .../ece99c9df8a9f6e921d69c824580f24e95827c42.md    |  297 +++++
+ .../ed81e5139a47e3a7356d136176580a00312f07ba.zip   |  Bin 0 -> 1049537 bytes
+ .../f067c289524d2e657be27d81a668b983a0fde82f.zip   |  Bin 0 -> 1098032 bytes
+ .../fb7d8fb277f216fd72a471e9f304a0f47c2050e7.png   |  Bin 0 -> 47055 bytes
+ .../reports/fr17-firefox/html/index.html           |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr17-firefox/html/trace/codicon.DCmgc-ay.ttf   |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr17-firefox/html/trace/index.BY2vkw8A.js      |    1 +
+ .../fr17-firefox/html/trace/index.B_TqY17P.css     |    1 +
+ .../reports/fr17-firefox/html/trace/index.html     |   45 +
+ .../fr17-firefox/html/trace/manifest.webmanifest   |   16 +
+ .../fr17-firefox/html/trace/playwright-logo.svg    |    9 +
+ .../fr17-firefox/html/trace/snapshot.-ChLTbql.js   |    1 +
+ .../reports/fr17-firefox/html/trace/snapshot.html  |   10 +
+ .../reports/fr17-firefox/html/trace/sw.bundle.js   |    4 +
+ .../fr17-firefox/html/trace/uiMode.CyMfwkXJ.css    |    1 +
+ .../fr17-firefox/html/trace/uiMode.DuLwZHRf.js     |    5 +
+ .../reports/fr17-firefox/html/trace/uiMode.html    |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr17-firefox/results.json  | 1211 +++++++++++++++++
+ .../0123d4d49d602fd07332ebcfda4d5078c49e7389.md    |  296 +++++
+ .../083c746b14329f2957a709409a853efa8371321e.png   |  Bin 0 -> 123375 bytes
+ .../1868d39936309e770e8105fda3358fbe19eb9018.md    |  296 +++++
+ .../1942585a1d9c03a4a6089069a7cdb7f93dc02dd7.png   |  Bin 0 -> 123887 bytes
+ .../27d4f1a93377fcddc5f49a6753a1dd640fcc75a4.zip   |  Bin 0 -> 395479 bytes
+ .../477759e0853cf2cd69a93e3a4c385fb0be86f57e.png   |  Bin 0 -> 124387 bytes
+ .../6239765600488360b487422f4f6d2b302d4cc52b.zip   |  Bin 0 -> 14936 bytes
+ .../6f09e2a49ff2accbfe057fa3a4d18202b2dc8ddd.md    |  131 ++
+ .../74f18dc50f19e1eddc9ec9b6e0859f6a5ea4d002.md    |  296 +++++
+ .../a2c0b2777d81265e18767f75f4d10a325a2543ca.zip   |  Bin 0 -> 495679 bytes
+ .../ad21762d59eed9960db4d5495185f9df23ede5ca.zip   |  Bin 0 -> 16006 bytes
+ .../bfe6e733c7daf003bc29282b2e58ec72f4acf7bc.zip   |  Bin 0 -> 452780 bytes
+ .../c516a6bb22d8f5822d08d4c984e5c03e8a116d24.md    |  296 +++++
+ .../d1bc3bdb2a975d4c2d26776631b88c08355a54b7.png   |  Bin 0 -> 120772 bytes
+ .../d71e803bceabbbcc70232d0235a4ffcff2c03275.zip   |  Bin 0 -> 545778 bytes
+ .../ea2dc2b4b939fe6904f0d4ba60e153434b11170d.md    |  146 +++
+ .../reports/fr17-webkit/html/index.html            |   49 +
+ .../html/trace/assets/codeMirrorModule-DNqxPF-E.js |   32 +
+ .../trace/assets/defaultSettingsView-BQT9Z6FV.js   |  184 +++
+ .../html/trace/assets/rolldown-runtime-QTnfLwEv.js |    1 +
+ .../html/trace/assets/urlMatch-Cgl6axSs.js         |    1 +
+ .../html/trace/codeMirrorModule.-QdMvsKi.css       |    1 +
+ .../fr17-webkit/html/trace/codicon.DCmgc-ay.ttf    |  Bin 0 -> 80340 bytes
+ .../html/trace/defaultSettingsView.C8BeHuxd.css    |    1 +
+ .../fr17-webkit/html/trace/index.BY2vkw8A.js       |    1 +
+ .../fr17-webkit/html/trace/index.B_TqY17P.css      |    1 +
+ .../reports/fr17-webkit/html/trace/index.html      |   45 +
+ .../fr17-webkit/html/trace/manifest.webmanifest    |   16 +
+ .../fr17-webkit/html/trace/playwright-logo.svg     |    9 +
+ .../fr17-webkit/html/trace/snapshot.-ChLTbql.js    |    1 +
+ .../reports/fr17-webkit/html/trace/snapshot.html   |   10 +
+ .../reports/fr17-webkit/html/trace/sw.bundle.js    |    4 +
+ .../fr17-webkit/html/trace/uiMode.CyMfwkXJ.css     |    1 +
+ .../fr17-webkit/html/trace/uiMode.DuLwZHRf.js      |    5 +
+ .../reports/fr17-webkit/html/trace/uiMode.html     |   19 +
+ .../html/trace/xtermModule.kHJ-D0s7.css            |    1 +
+ hw04-automation/reports/fr17-webkit/results.json   | 1211 +++++++++++++++++
+ 383 files changed, 29941 insertions(+)
+
+commit bca19b7a872651bcc5e381c40080159629242684
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:15 2026 +0700
+
+    docs: README summary, bug report with screenshots, review/gap analysis, AI audit log
+    
+    11 bugs across FR-04, FR-09, FR-17; every failure reproduces on chromium, firefox and webkit.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/README.md                          |  76 +++++++++++++++++++++
+ hw04-automation/docs/ai-audit-log.md               |  30 ++++++++
+ hw04-automation/docs/ai-critique-notes.md          |  20 ++++++
+ hw04-automation/docs/bug-report.md                 |  63 +++++++++++++++++
+ hw04-automation/docs/review-gap-analysis.md        |  41 +++++++++++
+ .../docs/screenshots/BUG-01_TC-04-01_chromium.png  | Bin 0 -> 26648 bytes
+ .../docs/screenshots/BUG-02_TC-04-05_chromium.png  | Bin 0 -> 26676 bytes
+ .../docs/screenshots/BUG-05_TC-09-01_chromium.png  | Bin 0 -> 30823 bytes
+ .../docs/screenshots/BUG-06_TC-09-02_chromium.png  | Bin 0 -> 29379 bytes
+ .../docs/screenshots/BUG-07_TC-09-14_chromium.png  | Bin 0 -> 30071 bytes
+ .../docs/screenshots/BUG-08_TC-17-05_chromium.png  | Bin 0 -> 45119 bytes
+ .../docs/screenshots/BUG-08b_TC-17-06_chromium.png | Bin 0 -> 45664 bytes
+ .../docs/screenshots/BUG-09_TC-17-07_chromium.png  | Bin 0 -> 45633 bytes
+ .../docs/screenshots/BUG-10_TC-17-10_chromium.png  | Bin 0 -> 45644 bytes
+ 14 files changed, 230 insertions(+)
+
+commit 4025b3fc8755109dff622092ce2aadc0f7acf2a0
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:15 2026 +0700
+
+    fix(FR-17): handle alert dialogs in a listener - login tests hung for 40s
+    
+    Review finding: page.waitForEvent("dialog") without accept/dismiss leaves the alert open (auto-dismiss is off once a listener exists), so click() blocks until timeout.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/tests/fr17-coupon-admin.spec.js | 25 ++++++++++++++-----------
+ 1 file changed, 14 insertions(+), 11 deletions(-)
+
+commit a48eb8a94aad01582eda5a6f458bce906e1d22e2
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:15 2026 +0700
+
+    test(FR-17): list, delete, admin login and access-control tests
+    
+    TC-17-16..23 incl. role-check tests for create/delete with a normal user token.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/tests/fr17-coupon-admin.spec.js | 96 +++++++++++++++++++++++++
+ 1 file changed, 96 insertions(+)
+
+commit fd41f74c1261c3ff95e788676b6c567094cf2267
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:15 2026 +0700
+
+    test(FR-17): data-driven coupon creation rules (15 cases)
+    
+    Uses per-run unique codes and API cleanup in afterEach. Exposes missing server-side validation (0/negative/over 100%).
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/data/fr17-coupon-admin.json     | 20 ++++++
+ hw04-automation/tests/fr17-coupon-admin.spec.js | 87 +++++++++++++++++++++++++
+ 2 files changed, 107 insertions(+)
+
+commit 40f548e9a4cdaff08133fa815b40f2be4c7ab675
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:14 2026 +0700
+
+    test(FR-09): expiry-date boundary (yesterday / today / tomorrow) for condition C2
+    
+    Review finding: only far-past (2020) and far-future (2099) dates were covered. Dates computed in UTC because the server reads YYYY-MM-DD as 00:00 UTC.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/data/fr09-coupon.json              |  6 +++
+ hw04-automation/tests/fr09-coupon-checkout.spec.js | 52 +++++++++++++++++++++-
+ 2 files changed, 56 insertions(+), 2 deletions(-)
+
+commit bffa926e44ab76b6097afea9caf50978e76ad338
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:14 2026 +0700
+
+    fix(FR-09): e2e test - navigate inside the SPA and tolerate ignored first add-to-cart click
+    
+    Review finding: cart lives in React state so page.goto("/cart") emptied it; first "Them vao gio hang" click is ignored by the SUT (FR-06 defect). Recorded as known-defect annotation.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/tests/fr09-coupon-checkout.spec.js | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+commit 1ace0fb5a262f4bf5c010d6801eae2944c98e0d3
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:14 2026 +0700
+
+    test(FR-09): coupon rules C1..C5 data-driven (17 cases), UI state and e2e checkout
+    
+    Expected values derived from the SRS (not from server code). Exposes percent formula, >= threshold and guest-coupon defects.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/data/fr09-coupon.json              |  27 ++++++
+ hw04-automation/tests/fr09-coupon-checkout.spec.js | 106 +++++++++++++++++++++
+ 2 files changed, 133 insertions(+)
+
+commit e24256c5f23f666f01da08199089cf84d89fa8eb
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:14 2026 +0700
+
+    test(FR-04): read-only email, role escalation, API validation and session tests
+    
+    TC-04-14..20. TC-04-15 shows PUT /users/me accepts role; role is restored in finally{} so the shared account is not left as admin.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/tests/fr04-profile.spec.js | 59 ++++++++++++++++++++++++++++++
+ 1 file changed, 59 insertions(+)
+
+commit bd085cb4fb220b8517919a0fb3ab93e273a3017d
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:13 2026 +0700
+
+    test(FR-04): data-driven profile validation (13 cases: phone boundaries, name, address)
+    
+    Data in data/fr04-profile.json. Oracle = SRS (phone starts with 0, 10-11 digits). Exposes the phone regex defect in Profile.jsx.
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/data/fr04-profile.json     | 18 +++++++
+ hw04-automation/tests/fr04-profile.spec.js | 75 ++++++++++++++++++++++++++++++
+ 2 files changed, 93 insertions(+)
+
+commit a92db5d116ff078892aa400455bbb41d34bcaf78
+Author: UngDuong125 <145776974+UngDuong125@users.noreply.github.com>
+Date:   Wed Nov 18 10:19:13 2026 +0700
+
+    chore: scaffold Playwright project (3 browsers, "Run by" report title, helpers, matrix runner)
+    
+    HW04 setup: chromium/firefox/webkit projects, HTML reporter title with student ID + ISO timestamp, serial workers (shared SQLite DB).
+    
+    Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
+
+ hw04-automation/.gitignore            |  4 +++
+ hw04-automation/package-lock.json     | 60 +++++++++++++++++++++++++++++++++++
+ hw04-automation/package.json          | 16 ++++++++++
+ hw04-automation/playwright.config.js  | 40 +++++++++++++++++++++++
+ hw04-automation/scripts/run-matrix.js | 27 ++++++++++++++++
+ hw04-automation/tests/helpers/api.js  | 23 ++++++++++++++
+ hw04-automation/tests/helpers/data.js |  9 ++++++
+ hw04-automation/tests/helpers/env.js  |  8 +++++
+ 8 files changed, 187 insertions(+)
+
+commit 85af3ba875c88283615e22cb108f13e2fccaf0e9
+Author: ttbhanh-hcmus <ttbhanh@hcmus.edu.vn>
+Date:   Fri May 15 08:30:35 2026 +0700
+
+    first upload
+
+ README.md                                 |  290 +-
+ api_specification.md                      |  214 +
+ backend/database.js                       |  119 +
+ backend/database.sqlite                   |  Bin 0 -> 36864 bytes
+ backend/package-lock.json                 | 1663 ++++++
+ backend/package.json                      |   20 +
+ backend/server.js                         |  572 ++
+ backend/test_profile.js                   |    8 +
+ frontend-admin/.gitignore                 |   24 +
+ frontend-admin/README.md                  |   16 +
+ frontend-admin/eslint.config.js           |   21 +
+ frontend-admin/index.html                 |   13 +
+ frontend-admin/package-lock.json          | 3681 ++++++++++++
+ frontend-admin/package.json               |   32 +
+ frontend-admin/postcss.config.js          |    6 +
+ frontend-admin/public/favicon.svg         |    1 +
+ frontend-admin/public/icons.svg           |   24 +
+ frontend-admin/src/App.css                |  184 +
+ frontend-admin/src/App.jsx                |  922 +++
+ frontend-admin/src/assets/hero.png        |  Bin 0 -> 13057 bytes
+ frontend-admin/src/assets/react.svg       |    1 +
+ frontend-admin/src/assets/vite.svg        |    1 +
+ frontend-admin/src/index.css              |    8 +
+ frontend-admin/src/main.jsx               |   10 +
+ frontend-admin/tailwind.config.js         |   11 +
+ frontend-admin/vite.config.js             |   11 +
+ frontend-mobile/.gitignore                |   41 +
+ frontend-mobile/App.js                    | 1300 +++++
+ frontend-mobile/app.json                  |   29 +
+ frontend-mobile/assets/adaptive-icon.png  |  Bin 0 -> 17547 bytes
+ frontend-mobile/assets/favicon.png        |  Bin 0 -> 1466 bytes
+ frontend-mobile/assets/icon.png           |  Bin 0 -> 22380 bytes
+ frontend-mobile/assets/splash-icon.png    |  Bin 0 -> 17547 bytes
+ frontend-mobile/index.js                  |    8 +
+ frontend-mobile/package-lock.json         | 8773 +++++++++++++++++++++++++++++
+ frontend-mobile/package.json              |   18 +
+ frontend-web/.gitignore                   |   24 +
+ frontend-web/README.md                    |   16 +
+ frontend-web/eslint.config.js             |   21 +
+ frontend-web/index.html                   |   13 +
+ frontend-web/package-lock.json            | 3681 ++++++++++++
+ frontend-web/package.json                 |   32 +
+ frontend-web/postcss.config.js            |    6 +
+ frontend-web/public/favicon.svg           |    1 +
+ frontend-web/public/icons.svg             |   24 +
+ frontend-web/src/App.css                  |  184 +
+ frontend-web/src/App.jsx                  |   71 +
+ frontend-web/src/assets/hero.png          |  Bin 0 -> 13057 bytes
+ frontend-web/src/assets/react.svg         |    1 +
+ frontend-web/src/assets/vite.svg          |    1 +
+ frontend-web/src/context/AuthContext.jsx  |   50 +
+ frontend-web/src/context/CartContext.jsx  |   36 +
+ frontend-web/src/index.css                |   14 +
+ frontend-web/src/main.jsx                 |   10 +
+ frontend-web/src/pages/Cart.jsx           |   79 +
+ frontend-web/src/pages/Checkout.jsx       |  151 +
+ frontend-web/src/pages/ForgotPassword.jsx |  100 +
+ frontend-web/src/pages/Home.jsx           |  116 +
+ frontend-web/src/pages/Login.jsx          |   69 +
+ frontend-web/src/pages/ProductDetail.jsx  |   73 +
+ frontend-web/src/pages/Profile.jsx        |  217 +
+ frontend-web/src/pages/Register.jsx       |   83 +
+ frontend-web/tailwind.config.js           |   11 +
+ frontend-web/vite.config.js               |    7 +
+ run_servers.sh                            |    5 +
+ setup_guide.md                            |  117 +
+ 66 files changed, 23232 insertions(+), 2 deletions(-)
+
+commit 2f9bf2bab45855abf211377a5d5eba10031649e3
+Author: Hanh Tran <ttbhanh@fit.hcmus.edu.vn>
+Date:   Fri May 15 08:27:44 2026 +0700
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
