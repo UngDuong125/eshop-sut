@@ -113,23 +113,26 @@ test.describe('FR-17 Coupon CRUD - list, delete, access', () => {
     expect((await allCoupons(request, token)).some((c) => c.code === code)).toBe(false);
   });
 
-  test('TC-17-18 [negative] admin login with a wrong password is refused', async ({ page }) => {
+  // NOTE: the dialog must be handled in a listener (accept/dismiss); a bare waitForEvent('dialog')
+  // leaves the alert open and the following click() hangs until the test timeout.
+  async function loginExpectingAlert(page, creds) {
+    const messages = [];
+    page.on('dialog', async (d) => { messages.push(d.message()); await d.dismiss(); });
     await page.goto(ADMIN_URL);
-    const dialog = page.waitForEvent('dialog');
-    await page.getByPlaceholder('Email').fill(ADMIN.email);
-    await page.getByPlaceholder('Password').fill('WrongPass1!');
+    await page.getByPlaceholder('Email').fill(creds.email);
+    await page.getByPlaceholder('Password').fill(creds.password);
     await page.getByRole('button', { name: 'Login' }).click();
-    expect((await dialog).message()).toMatch(/thất bại/i);
+    await expect.poll(() => messages.length).toBeGreaterThan(0);
+    return messages[0];
+  }
+
+  test('TC-17-18 [negative] admin login with a wrong password is refused', async ({ page }) => {
+    expect(await loginExpectingAlert(page, { email: ADMIN.email, password: 'WrongPass1!' })).toMatch(/thất bại/i);
     await expect(page.getByRole('heading', { name: 'Admin Login' })).toBeVisible();
   });
 
   test('TC-17-19 [negative] a normal (non-admin) user cannot sign in to the admin app', async ({ page }) => {
-    await page.goto(ADMIN_URL);
-    const dialog = page.waitForEvent('dialog');
-    await page.getByPlaceholder('Email').fill(USER.email);
-    await page.getByPlaceholder('Password').fill(USER.password);
-    await page.getByRole('button', { name: 'Login' }).click();
-    expect((await dialog).message()).toMatch(/không phải là admin/i);
+    expect(await loginExpectingAlert(page, USER)).toMatch(/không phải là admin/i);
     await expect(page.getByRole('heading', { name: 'Admin Login' })).toBeVisible();
   });
 
