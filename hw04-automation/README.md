@@ -23,7 +23,7 @@ SUT: https://github.com/ttbhanh/eshop-sut (local copy at `D:\KiemThuPM\eshop-sut
 | Flaky / skipped | 0 / 0 |
 | Distinct bugs found | 11 (see `docs/bug-report.md`) |
 | Demo video | TODO – paste unlisted YouTube link |
-| GitHub repo | TODO – paste public repo link |
+| GitHub repo | https://github.com/UngDuong125/eshop-sut/tree/main/hw04-automation |
 
 A "failed" test here means the SUT violates the SRS – not that the test is broken (each failure is traced to SUT source).
 
@@ -64,11 +64,12 @@ and cleans up, so repeated runs do not collide. To reset the SUT: `node database
 - `docs/review-gap-analysis.md` – review of the AI-generated scripts (what the AI got wrong/missed and why)
 - `docs/bug-report.md` + `docs/screenshots/` – bugs with evidence
 - `docs/ai-audit-log.md`, `docs/ai-critique-notes.md` – AI Audit Report and critique notes
+- `docs/demo-script.md` – script for the demo video; `docs/issues/` – ready-to-post GitHub issue texts
 - `git-log.txt` – generate with `git log --stat > git-log.txt` before submitting
 
 ## Still to do by the student (cannot be produced by the AI)
 1. Create the public GitHub repo and push; **≥ 8 commits that change `.spec.js` files** (a commit that only touches docs does not count).
-2. Open one GitHub Issue per bug with a screenshot; fill the Issue column in `docs/bug-report.md`.
+2. Enable Issues on the repo (it is a fork, so off by default), run `node scripts/create-issues.js` with a token, then paste the issue URLs into `docs/bug-report.md`.
 3. Record the ≥ 5-min Vietnamese demo video (own voice, face-cam or `whoami` + `hostname`), upload as unlisted, add the link.
 4. Write the 200–300-word AI Critique yourself; paste your verbatim prompts into the audit log.
 5. Re-run `node scripts/run-matrix.js` yourself so the reports carry your own run timestamp; export README/report to PDF.

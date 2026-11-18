@@ -2,24 +2,23 @@
 
 Expected behaviour comes from the SRS in `eshop-sut/README.md`, not from what the SUT does.
 All bugs reproduce identically on Chromium, Firefox and WebKit (see `reports/<fr>-<browser>/html`).
-Screenshots are in `docs/screenshots/`. API-only bugs have no browser page, so no screenshot is produced by
-Playwright – capture the failing assertion from the HTML report (Errors tab) for the GitHub issue.
+Screenshots are in `docs/screenshots/`. API-only bugs (BUG-03, 04, 11) have no browser page, so their "screenshot" is the failing assertion in the Playwright HTML report (`*_report.png`).
 
-> TODO (student): create one GitHub Issue per bug below, attach the screenshot, and paste the issue URL in the last column.
+> Issues: issue text is prepared in `docs/issues/BUG-xx.md`; create them with `node scripts/create-issues.js` (needs Issues enabled on the repo + a token). Paste the issue URLs in the last column.
 
 | ID | FR | Sev. | Title | Failing tests | Screenshot | Issue |
 |----|----|------|-------|---------------|------------|-------|
 | BUG-01 | FR-04 | High | Valid phone numbers (start with 0, 10–11 digits) are rejected by the profile form | TC-04-01, 02, 09, 11, 12, 13 | `BUG-01_TC-04-01_chromium.png` | |
 | BUG-02 | FR-04 | Medium | Phone numbers NOT starting with 0 are accepted and saved | TC-04-05, 06 | `BUG-02_TC-04-05_chromium.png` | |
-| BUG-03 | FR-04 | **Critical** | Any user can make themselves admin: `PUT /api/users/me` accepts `role` | TC-04-15 | (API) | |
-| BUG-04 | FR-04 | Medium | Backend does not validate the phone number at all (`not-a-phone` returns 200) | TC-04-16 | (API) | |
+| BUG-03 | FR-04 | **Critical** | Any user can make themselves admin: `PUT /api/users/me` accepts `role` | TC-04-15 | `BUG-03_TC-04-15_report.png` | |
+| BUG-04 | FR-04 | Medium | Backend does not validate the phone number at all (`not-a-phone` returns 200) | TC-04-16 | `BUG-04_TC-04-16_report.png` | |
 | BUG-05 | FR-09 | **Critical** | Percent coupon computes `total*(1-value)` instead of `total*value/100` → negative discount, higher total | TC-09-01, 04, 11 | `BUG-05_TC-09-01_chromium.png` | |
 | BUG-06 | FR-09 | High | Order total exactly equal to `min_order_amount` is rejected (code uses `>` not `>=`) | TC-09-02, 05, 07 | `BUG-06_TC-09-02_chromium.png` | |
 | BUG-07 | FR-09 | High | Guest (no login) can apply a coupon – condition C4 not enforced | TC-09-14 | `BUG-07_TC-09-14_chromium.png` | |
 | BUG-08 | FR-17 | High | Admin coupon with `discount_value` 0 or negative is stored | TC-17-05, 06 | `BUG-08_…`, `BUG-08b_…` | |
 | BUG-09 | FR-17 | Medium | Negative `min_order_amount` (-1) is stored | TC-17-07 | `BUG-09_TC-17-07_chromium.png` | |
 | BUG-10 | FR-17 | Medium | Percent coupon with value 150 (>100%) is stored | TC-17-10 | `BUG-10_TC-17-10_chromium.png` | |
-| BUG-11 | FR-17 | **Critical** | No role check: a normal user token can create and delete coupons (HTTP 200) | TC-17-22, 23 | (API) | |
+| BUG-11 | FR-17 | **Critical** | No role check: a normal user token can create and delete coupons (HTTP 200) | TC-17-22, 23 | `BUG-11_TC-17-22_report.png` | |
 
 ## Details
 
