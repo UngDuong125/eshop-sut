@@ -1,0 +1,8 @@
+{
+  "note": "Source of expected values: SRS <FR> clause <n>, NOT the SUT code. One object = one generated test.",
+  "cases": [
+    { "id": "TC-<FR>-01", "type": "positive", "title": "<Action + function + condition>", "input": "", "expect": "accepted", "message": "", "expectedValue": "" },
+    { "id": "TC-<FR>-02", "type": "edge",     "title": "boundary: <limit> exactly", "input": "", "expect": "accepted", "message": "", "expectedValue": "" },
+    { "id": "TC-<FR>-03", "type": "negative", "title": "<invalid input> must be rejected", "input": "", "expect": "rejected", "messagePattern": "" }
+  ]
+}

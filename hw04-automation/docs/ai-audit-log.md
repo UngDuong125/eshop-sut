@@ -20,7 +20,7 @@
 | 4 | Scaffolding, step by step | "hãy tạo thư mục mới cho hw4, đồng thời dẫn AI thực hiện từng bước theo yêu cầu của hw4" | New repo folder, `playwright.config.js` (3 browsers, "Run by" title + ISO timestamp), helpers, `scripts/run-matrix.js` | Verified the HTML header shows "Run by: 23120034 \| <ISO>" by opening a report |
 | 5 | Source reading | (same session) | Read `Profile.jsx`, `Checkout.jsx`, admin `App.jsx`, `server.js` to learn selectors / endpoints | – |
 | 6 | FR-04 | (same session) | `data/fr04-profile.json` (13 cases) + `tests/fr04-profile.spec.js` (19 tests) | Found that "accepted" cases fail because of the SUT's phone regex (BUG-01), confirmed by reading `Profile.jsx:43` |
-| 7 | FR-09 | (same session) | `data/fr09-coupon.json` + `tests/fr09-coupon-checkout.spec.js` (21 tests) | Oracle recomputed from SRS; fixed e2e navigation (cart in React state) |
+| 7 | FR-09 | (same session) | `data/fr09-coupon.json` + `tests/fr09-coupon-checkout.spec.js` (24 tests) | Oracle recomputed from SRS; fixed e2e navigation (cart in React state) |
 | 8 | FR-17 | (same session) | `data/fr17-coupon-admin.json` + `tests/fr17-coupon-admin.spec.js` (23 tests) | Fixed hanging dialog tests |
 | 9 | Run + report | (same session) | 9 runs (3 FR × 3 browsers), HTML reports, bug report, review/gap analysis | See `docs/review-gap-analysis.md` |
 
