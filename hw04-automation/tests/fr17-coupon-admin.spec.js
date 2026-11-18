@@ -85,3 +85,99 @@ test.describe('FR-17 Coupon CRUD - data-driven create rules', () => {
     });
   }
 });
+
+test.describe('FR-17 Coupon CRUD - list, delete, access', () => {
+  test('TC-17-16 [positive] list shows the seeded coupons with correct formatting', async ({ page, request }) => {
+    await openCouponTab(page, await adminToken(request));
+    const save10 = page.getByRole('row').filter({ hasText: 'SAVE10' });
+    await expect(save10).toContainText('10%');
+    await expect(save10).toContainText('300,000');
+    await expect(page.getByRole('row').filter({ hasText: 'EXPIRED' })).toContainText('Hết hạn');
+    await expect(page.getByRole('row').filter({ hasText: 'BIGBUY' })).toContainText('50,000');
+  });
+
+  test('TC-17-17 [positive] admin can delete a coupon from the list', async ({ page, request }) => {
+    const token = await adminToken(request);
+    const code = `AUTODEL-${RUN}`;
+    const res = await request.post(`${API_URL}/admin/coupons`, {
+      headers: auth(token),
+      data: { code, type: 'fixed', discount_value: 1000, min_order_amount: 0, expired_at: '2099-12-31', max_uses_per_user: 1 },
+    });
+    expect(res.ok(), 'precondition: coupon created').toBeTruthy();
+
+    await openCouponTab(page, token);
+    const row = page.getByRole('row').filter({ hasText: code });
+    await expect(row).toBeVisible();
+    await row.getByRole('button', { name: 'Xóa' }).click();
+    await expect(row).toHaveCount(0);
+    expect((await allCoupons(request, token)).some((c) => c.code === code)).toBe(false);
+  });
+
+  test('TC-17-18 [negative] admin login with a wrong password is refused', async ({ page }) => {
+    await page.goto(ADMIN_URL);
+    const dialog = page.waitForEvent('dialog');
+    await page.getByPlaceholder('Email').fill(ADMIN.email);
+    await page.getByPlaceholder('Password').fill('WrongPass1!');
+    await page.getByRole('button', { name: 'Login' }).click();
+    expect((await dialog).message()).toMatch(/thất bại/i);
+    await expect(page.getByRole('heading', { name: 'Admin Login' })).toBeVisible();
+  });
+
+  test('TC-17-19 [negative] a normal (non-admin) user cannot sign in to the admin app', async ({ page }) => {
+    await page.goto(ADMIN_URL);
+    const dialog = page.waitForEvent('dialog');
+    await page.getByPlaceholder('Email').fill(USER.email);
+    await page.getByPlaceholder('Password').fill(USER.password);
+    await page.getByRole('button', { name: 'Login' }).click();
+    expect((await dialog).message()).toMatch(/không phải là admin/i);
+    await expect(page.getByRole('heading', { name: 'Admin Login' })).toBeVisible();
+  });
+
+  test('TC-17-20 [positive] real UI login as admin reaches the dashboard and coupon tab', async ({ page }) => {
+    await page.goto(ADMIN_URL);
+    await page.getByPlaceholder('Email').fill(ADMIN.email);
+    await page.getByPlaceholder('Password').fill(ADMIN.password);
+    await page.getByRole('button', { name: 'Login' }).click();
+    await expect(page.getByRole('heading', { name: 'EShop Admin' })).toBeVisible();
+    await page.getByText('Mã Giảm Giá', { exact: true }).click();
+    await expect(page.getByRole('heading', { name: 'Quản lý Mã Giảm Giá' })).toBeVisible();
+  });
+
+  test('TC-17-21 [negative/security] creating a coupon without a token is refused (401/403)', async ({ request }) => {
+    const res = await request.post(`${API_URL}/admin/coupons`, {
+      data: { code: `NOAUTH-${RUN}`, type: 'fixed', discount_value: 1000, min_order_amount: 0, expired_at: '2099-12-31', max_uses_per_user: 1 },
+    });
+    expect([401, 403]).toContain(res.status());
+  });
+
+  test('TC-17-22 [negative/security] a normal user token must not create coupons (role check)', async ({ request }) => {
+    const { token } = await userLogin(request);
+    const code = `USERMADE-${RUN}`;
+    const res = await request.post(`${API_URL}/admin/coupons`, {
+      headers: auth(token),
+      data: { code, type: 'fixed', discount_value: 1000, min_order_amount: 0, expired_at: '2099-12-31', max_uses_per_user: 1 },
+    });
+    const status = res.status();
+    // cleanup first, so a failing assertion does not leave the coupon behind
+    const admin = await adminToken(request);
+    for (const c of await allCoupons(request, admin)) {
+      if (c.code === code) await request.delete(`${API_URL}/admin/coupons/${c.id}`, { headers: auth(admin) });
+    }
+    expect(status, 'non-admin must get 403').toBe(403);
+  });
+
+  test('TC-17-23 [negative/security] a normal user token must not delete coupons (role check)', async ({ request }) => {
+    const admin = await adminToken(request);
+    const code = `USERDEL-${RUN}`;
+    const make = await request.post(`${API_URL}/admin/coupons`, {
+      headers: auth(admin),
+      data: { code, type: 'fixed', discount_value: 1000, min_order_amount: 0, expired_at: '2099-12-31', max_uses_per_user: 1 },
+    });
+    const id = (await make.json()).id;
+    const { token } = await userLogin(request);
+    const res = await request.delete(`${API_URL}/admin/coupons/${id}`, { headers: auth(token) });
+    const status = res.status();
+    await request.delete(`${API_URL}/admin/coupons/${id}`, { headers: auth(admin) }); // cleanup
+    expect(status, 'non-admin must get 403').toBe(403);
+  });
+});
