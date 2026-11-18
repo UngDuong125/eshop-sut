@@ -73,3 +73,62 @@ test.describe('FR-04 Profile - data-driven phone/name/address rules', () => {
     });
   }
 });
+
+test.describe('FR-04 Profile - read-only email, role protection, session', () => {
+  test('TC-04-14 [positive] email field is disabled and shows the account email', async ({ page, request }) => {
+    const { token } = await userLogin(request);
+    await page.addInitScript((t) => localStorage.setItem('token', t), token);
+    await page.goto('/profile');
+    const email = page.locator('form input[type="text"]').first();
+    await expect(email).toBeDisabled();
+    await expect(email).toHaveValue(USER.email);
+  });
+
+  test('TC-04-15 [negative/security] user cannot escalate own role via PUT /users/me', async ({ request }) => {
+    const { token } = await userLogin(request);
+    const res = await request.put(`${API_URL}/users/me`, {
+      headers: { Authorization: `Bearer ${token}` },
+      data: { ...baseline, role: 'admin' },
+    });
+    const stored = await serverProfile(request, token);
+    try {
+      expect(stored.role, 'role must remain "user"').toBe('user');
+      expect(res.status()).toBeLessThan(500);
+    } finally {
+      // Always restore, so a failing assertion does not leave the shared account as admin.
+      await request.put(`${API_URL}/users/me`, { headers: { Authorization: `Bearer ${token}` }, data: { ...baseline, role: 'user' } });
+    }
+  });
+
+  test('TC-04-16 [negative/security] backend rejects an invalid phone sent directly to the API', async ({ request }) => {
+    const { token } = await userLogin(request);
+    const res = await request.put(`${API_URL}/users/me`, {
+      headers: { Authorization: `Bearer ${token}` },
+      data: { ...baseline, phone: 'not-a-phone' },
+    });
+    const status = res.status();
+    await request.put(`${API_URL}/users/me`, { headers: { Authorization: `Bearer ${token}` }, data: baseline });
+    expect(status, 'server-side validation must reject').toBeGreaterThanOrEqual(400);
+  });
+
+  test('TC-04-17 [negative] profile API requires authentication', async ({ request }) => {
+    const res = await request.put(`${API_URL}/users/me`, { data: baseline });
+    expect([401, 403]).toContain(res.status());
+  });
+
+  test('TC-04-18 [negative] profile page without a session asks the user to log in', async ({ page }) => {
+    await page.goto('/profile');
+    await expect(page.getByText('Vui lòng đăng nhập')).toBeVisible();
+  });
+
+  test('TC-04-20 [positive] real UI login leads to an editable profile', async ({ page }) => {
+    await page.goto('/login');
+    const inputs = page.locator('form input');
+    await inputs.nth(0).fill(USER.email);
+    await inputs.nth(1).fill(USER.password);
+    await page.getByRole('button', { name: 'Sign In' }).click();
+    await expect(page).toHaveURL(/localhost:5173\/?$/);
+    await page.goto('/profile');
+    await expect(page.getByRole('heading', { name: 'Hồ sơ của bạn' })).toBeVisible();
+  });
+});
