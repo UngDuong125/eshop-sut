@@ -4,9 +4,9 @@
 const { test, expect } = require('@playwright/test');
 const { loadData } = require('./helpers/data');
 const { API_URL } = require('./helpers/env');
-const { registerFreshUser } = require('./helpers/api');
+const { registerFreshUser, adminToken } = require('./helpers/api');
 
-const { cases, disabledButtonCases, e2e } = loadData('fr09-coupon.json');
+const { cases, dateBoundaryCases, disabledButtonCases, e2e } = loadData('fr09-coupon.json');
 
 const toInt = (text) => Number(text.replace(/[^\d-]/g, ''));
 
@@ -63,6 +63,54 @@ test.describe('FR-09 Coupon at checkout - data-driven rules C1..C5', () => {
         await expect(page.locator('p.text-red-600.text-sm')).toBeVisible();
         await expect(page.locator('p.text-red-600.text-sm')).toContainText(new RegExp(c.error, 'i'));
         await expect(page.getByText(/Thành tiền:/)).toHaveCount(0);
+      }
+    });
+  }
+});
+
+/**
+ * YYYY-MM-DD of (today + offsetDays) in the UTC calendar.
+ * UTC on purpose: the backend does `new Date('YYYY-MM-DD') < new Date()`, i.e. it reads the date as 00:00 UTC.
+ * Using the machine's local date made "expires today" flip between 00:00 and 07:00 in UTC+7 (found while reviewing).
+ */
+function dateWithOffset(offsetDays) {
+  const d = new Date();
+  d.setUTCDate(d.getUTCDate() + offsetDays);
+  return d.toISOString().slice(0, 10);
+}
+
+test.describe('FR-09 Coupon expiry date boundary (C2)', () => {
+  for (const c of dateBoundaryCases) {
+    test(`${c.id} [${c.type}] ${c.title}`, async ({ page, request }) => {
+      const admin = await adminToken(request);
+      const code = `DATE${c.offsetDays < 0 ? 'M' : 'P'}${Math.abs(c.offsetDays)}${Date.now().toString(36).toUpperCase()}`;
+      const expiredAt = dateWithOffset(c.offsetDays);
+      const make = await request.post(`${API_URL}/admin/coupons`, {
+        headers: { Authorization: `Bearer ${admin}` },
+        data: { code, type: 'fixed', discount_value: 10000, min_order_amount: 0, expired_at: expiredAt, max_uses_per_user: 1 },
+      });
+      expect(make.ok(), `precondition: coupon ${code} expiring ${expiredAt}`).toBeTruthy();
+      const couponRowId = (await make.json()).id;
+
+      try {
+        const fresh = await registerFreshUser(request, 'fr09date');
+        await page.addInitScript((t) => localStorage.setItem('token', t), fresh.token);
+        await page.goto('/checkout');
+        await totalInput(page).fill(String(c.total));
+        await couponInput(page).fill(code);
+        await applyButton(page).click();
+
+        if (c.expect === 'applied') {
+          await expect(page.getByText(/Áp dụng thành công/)).toBeVisible();
+          expect.soft(toInt(await page.getByText(/Tiết kiệm:/).locator('strong').innerText())).toBe(c.discount);
+          expect.soft(toInt(await page.getByText(/Thành tiền:/).locator('strong').innerText())).toBe(c.final);
+        } else {
+          await expect(page.locator('p.text-red-600.text-sm'), `coupon expiring ${expiredAt} must be refused`)
+            .toContainText(new RegExp(c.error, 'i'));
+          await expect(page.getByText(/Thành tiền:/)).toHaveCount(0);
+        }
+      } finally {
+        await request.delete(`${API_URL}/admin/coupons/${couponRowId}`, { headers: { Authorization: `Bearer ${admin}` } });
       }
     });
   }
