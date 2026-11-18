@@ -1,0 +1,1235 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\KiemThuPM\\hw04-eshop-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/fr04-profile.spec.js",
+      "--project=firefox"
+    ],
+    "configFile": "D:\\KiemThuPM\\hw04-eshop-automation\\playwright.config.js",
+    "rootDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120034",
+      "Run at (ISO)": "2026-11-17T17:13:01.560Z",
+      "Run tag": "fr04-firefox",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr04-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:13:01.560Z",
+          "Run tag": "fr04-firefox",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr04-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:13:01.560Z",
+          "Run tag": "fr04-firefox",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr04-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:13:01.560Z",
+          "Run tag": "fr04-firefox",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:13:01.560Z",
+          "Run tag": "fr04-firefox",
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "snapshotDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "video": "off",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/fr04-firefox/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/fr04-firefox/html",
+          "open": "never",
+          "title": "EShop HW04 - fr04-firefox | Run by: 23120034 | 2026-11-17T17:13:01.560Z"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr04-profile.spec.js",
+      "file": "fr04-profile.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-04 Profile - data-driven phone/name/address rules",
+          "file": "fr04-profile.spec.js",
+          "line": 18,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-04-01 [positive] valid 10-digit phone starting with 0",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9155,
+                      "error": {
+                        "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 48,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'accepted'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - alert message equality\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         expect(dialogs\u001b[33m,\u001b[39m \u001b[32m'success alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Cập nhật thành công!'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[90m// Pattern 2 - persisted value equality on the backend\u001b[39m\n \u001b[90m 55 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 48,
+                            "line": 53
+                          },
+                          "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  51 |       if (c.expect === 'accepted') {\n  52 |         // Pattern 1 - alert message equality\n> 53 |         expect(dialogs, 'success alert shown').toEqual(['Cập nhật thành công!']);\n     |                                                ^\n  54 |         // Pattern 2 - persisted value equality on the backend\n  55 |         expect(stored.phone).toBe(c.phone);\n  56 |         expect(stored.name).toBe(c.name);\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:02.233Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-8e32a-digit-phone-starting-with-0-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-8e32a-digit-phone-starting-with-0-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-8e32a-digit-phone-starting-with-0-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 48,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-a5a14eb46734a006cc73",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-02 [edge] boundary: valid 11-digit phone (upper bound)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4849,
+                      "error": {
+                        "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 48,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'accepted'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - alert message equality\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         expect(dialogs\u001b[33m,\u001b[39m \u001b[32m'success alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Cập nhật thành công!'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[90m// Pattern 2 - persisted value equality on the backend\u001b[39m\n \u001b[90m 55 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 48,
+                            "line": 53
+                          },
+                          "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  51 |       if (c.expect === 'accepted') {\n  52 |         // Pattern 1 - alert message equality\n> 53 |         expect(dialogs, 'success alert shown').toEqual(['Cập nhật thành công!']);\n     |                                                ^\n  54 |         // Pattern 2 - persisted value equality on the backend\n  55 |         expect(stored.phone).toBe(c.phone);\n  56 |         expect(stored.name).toBe(c.name);\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:13.779Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-b3994-11-digit-phone-upper-bound--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-b3994-11-digit-phone-upper-bound--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-b3994-11-digit-phone-upper-bound--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 48,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-94c77c0347018a1e55f9",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-03 [negative] boundary: 9-digit phone (below lower bound)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4864,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:20.481Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-b820ca90119178414ff6",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-04 [negative] boundary: 12-digit phone (above upper bound)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3697,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:26.036Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-817fd03d7790177f50c0",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-05 [negative] 10-digit phone NOT starting with 0",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3879,
+                      "error": {
+                        "message": "Error: validation alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"Cập nhật thành công!\"\u001b[39m",
+                        "stack": "Error: validation alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"Cập nhật thành công!\"\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:64:61",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 61,
+                          "line": 64
+                        },
+                        "snippet": " \u001b[90m 62 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {\n \u001b[90m 63 |\u001b[39m         \u001b[90m// Invalid phone: the user must be told, and nothing may be stored.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m         expect(dialogs\u001b[33m.\u001b[39mjoin(\u001b[32m'|'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m'validation alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/không hợp lệ/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m         expect(dialogs\u001b[33m.\u001b[39mjoin(\u001b[32m'|'\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoMatch(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone\u001b[33m,\u001b[39m \u001b[32m'phone must stay unchanged'\u001b[39m)\u001b[33m.\u001b[39mtoBe(baseline\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'blocked-by-html5'\u001b[39m) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 61,
+                            "line": 64
+                          },
+                          "message": "Error: validation alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"Cập nhật thành công!\"\u001b[39m\n\n  62 |       } else if (c.expect === 'rejected') {\n  63 |         // Invalid phone: the user must be told, and nothing may be stored.\n> 64 |         expect(dialogs.join('|'), 'validation alert shown').toMatch(/không hợp lệ/i);\n     |                                                             ^\n  65 |         expect(dialogs.join('|')).not.toMatch(/thành công/i);\n  66 |         expect(stored.phone, 'phone must stay unchanged').toBe(baseline.phone);\n  67 |       } else if (c.expect === 'blocked-by-html5') {\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:64:61"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:29.751Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-7e6e7-t-phone-NOT-starting-with-0-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-7e6e7-t-phone-NOT-starting-with-0-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-7e6e7-t-phone-NOT-starting-with-0-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 61,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-e182a0572c44b3b69c90",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-06 [negative] 9-digit phone NOT starting with 0",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4660,
+                      "error": {
+                        "message": "Error: validation alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"Cập nhật thành công!\"\u001b[39m",
+                        "stack": "Error: validation alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"Cập nhật thành công!\"\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:64:61",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 61,
+                          "line": 64
+                        },
+                        "snippet": " \u001b[90m 62 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'rejected'\u001b[39m) {\n \u001b[90m 63 |\u001b[39m         \u001b[90m// Invalid phone: the user must be told, and nothing may be stored.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m         expect(dialogs\u001b[33m.\u001b[39mjoin(\u001b[32m'|'\u001b[39m)\u001b[33m,\u001b[39m \u001b[32m'validation alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/không hợp lệ/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m         expect(dialogs\u001b[33m.\u001b[39mjoin(\u001b[32m'|'\u001b[39m))\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoMatch(\u001b[35m/thành công/i\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone\u001b[33m,\u001b[39m \u001b[32m'phone must stay unchanged'\u001b[39m)\u001b[33m.\u001b[39mtoBe(baseline\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m       } \u001b[36melse\u001b[39m \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'blocked-by-html5'\u001b[39m) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 61,
+                            "line": 64
+                          },
+                          "message": "Error: validation alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/không hợp lệ/i\u001b[39m\nReceived string:  \u001b[31m\"Cập nhật thành công!\"\u001b[39m\n\n  62 |       } else if (c.expect === 'rejected') {\n  63 |         // Invalid phone: the user must be told, and nothing may be stored.\n> 64 |         expect(dialogs.join('|'), 'validation alert shown').toMatch(/không hợp lệ/i);\n     |                                                             ^\n  65 |         expect(dialogs.join('|')).not.toMatch(/thành công/i);\n  66 |         expect(stored.phone, 'phone must stay unchanged').toBe(baseline.phone);\n  67 |       } else if (c.expect === 'blocked-by-html5') {\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:64:61"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:34.758Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-a9b26-t-phone-NOT-starting-with-0-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-a9b26-t-phone-NOT-starting-with-0-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-a9b26-t-phone-NOT-starting-with-0-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 61,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-02a733789c7ccf95e8d6",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-07 [negative] phone containing letters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4760,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:41.273Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-e7259be625a70cf07921",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-08 [negative] phone containing spaces",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3720,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:46.740Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-9cfe1541713a950e080d",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-09 [positive] Vietnamese diacritics in name",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3847,
+                      "error": {
+                        "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 48,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'accepted'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - alert message equality\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         expect(dialogs\u001b[33m,\u001b[39m \u001b[32m'success alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Cập nhật thành công!'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[90m// Pattern 2 - persisted value equality on the backend\u001b[39m\n \u001b[90m 55 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 48,
+                            "line": 53
+                          },
+                          "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  51 |       if (c.expect === 'accepted') {\n  52 |         // Pattern 1 - alert message equality\n> 53 |         expect(dialogs, 'success alert shown').toEqual(['Cập nhật thành công!']);\n     |                                                ^\n  54 |         // Pattern 2 - persisted value equality on the backend\n  55 |         expect(stored.phone).toBe(c.phone);\n  56 |         expect(stored.name).toBe(c.name);\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:50.478Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-96b52-etnamese-diacritics-in-name-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-96b52-etnamese-diacritics-in-name-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-96b52-etnamese-diacritics-in-name-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 48,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-7cac3b37fc1dbad6d6f2",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-10 [negative] empty name is blocked by HTML5 required",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4624,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:13:55.474Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-7dfae8eed2bf990e03d9",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-11 [edge] very long address (500 chars)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3838,
+                      "error": {
+                        "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 48,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'accepted'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - alert message equality\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         expect(dialogs\u001b[33m,\u001b[39m \u001b[32m'success alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Cập nhật thành công!'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[90m// Pattern 2 - persisted value equality on the backend\u001b[39m\n \u001b[90m 55 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 48,
+                            "line": 53
+                          },
+                          "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  51 |       if (c.expect === 'accepted') {\n  52 |         // Pattern 1 - alert message equality\n> 53 |         expect(dialogs, 'success alert shown').toEqual(['Cập nhật thành công!']);\n     |                                                ^\n  54 |         // Pattern 2 - persisted value equality on the backend\n  55 |         expect(stored.phone).toBe(c.phone);\n  56 |         expect(stored.name).toBe(c.name);\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:00.753Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-53c0b-ery-long-address-500-chars--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-53c0b-ery-long-address-500-chars--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-53c0b-ery-long-address-500-chars--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 48,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-9b7297cd628ce37787f1",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-12 [edge] HTML/script in address is stored as plain text",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5015,
+                      "error": {
+                        "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 48,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'accepted'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - alert message equality\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         expect(dialogs\u001b[33m,\u001b[39m \u001b[32m'success alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Cập nhật thành công!'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[90m// Pattern 2 - persisted value equality on the backend\u001b[39m\n \u001b[90m 55 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 48,
+                            "line": 53
+                          },
+                          "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  51 |       if (c.expect === 'accepted') {\n  52 |         // Pattern 1 - alert message equality\n> 53 |         expect(dialogs, 'success alert shown').toEqual(['Cập nhật thành công!']);\n     |                                                ^\n  54 |         // Pattern 2 - persisted value equality on the backend\n  55 |         expect(stored.phone).toBe(c.phone);\n  56 |         expect(stored.name).toBe(c.name);\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:05.801Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-07070-ess-is-stored-as-plain-text-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-07070-ess-is-stored-as-plain-text-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-07070-ess-is-stored-as-plain-text-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 48,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-a37fbbab9cdef89910fa",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            },
+            {
+              "title": "TC-04-13 [edge] empty address is allowed (optional field)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4820,
+                      "error": {
+                        "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                        "stack": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 48,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'accepted'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - alert message equality\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         expect(dialogs\u001b[33m,\u001b[39m \u001b[32m'success alert shown'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[32m'Cập nhật thành công!'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[90m// Pattern 2 - persisted value equality on the backend\u001b[39m\n \u001b[90m 55 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mphone)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mphone)\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         expect(stored\u001b[33m.\u001b[39mname)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mname)\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 48,
+                            "line": 53
+                          },
+                          "message": "Error: success alert shown\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"Cập nhật thành công!\",\u001b[39m\n\u001b[31m+   \"Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  51 |       if (c.expect === 'accepted') {\n  52 |         // Pattern 1 - alert message equality\n> 53 |         expect(dialogs, 'success alert shown').toEqual(['Cập nhật thành công!']);\n     |                                                ^\n  54 |         // Pattern 2 - persisted value equality on the backend\n  55 |         expect(stored.phone).toBe(c.phone);\n  56 |         expect(stored.name).toBe(c.name);\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:53:48"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:12.722Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-328cd--is-allowed-optional-field--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-328cd--is-allowed-optional-field--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-328cd--is-allowed-optional-field--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 48,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-58edb85c2e9d86ae17f0",
+              "file": "fr04-profile.spec.js",
+              "line": 32,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "FR-04 Profile - read-only email, role protection, session",
+          "file": "fr04-profile.spec.js",
+          "line": 77,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-04-14 [positive] email field is disabled and shows the account email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3944,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:19.355Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-241ca70d6ad59e07cca0",
+              "file": "fr04-profile.spec.js",
+              "line": 78,
+              "column": 3
+            },
+            {
+              "title": "TC-04-15 [negative/security] user cannot escalate own role via PUT /users/me",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 119,
+                      "error": {
+                        "message": "Error: role must remain \"user\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"user\"\u001b[39m\nReceived: \u001b[31m\"admin\"\u001b[39m",
+                        "stack": "Error: role must remain \"user\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"user\"\u001b[39m\nReceived: \u001b[31m\"admin\"\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:95:54",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 54,
+                          "line": 95
+                        },
+                        "snippet": " \u001b[90m 93 |\u001b[39m     \u001b[36mconst\u001b[39m stored \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m serverProfile(request\u001b[33m,\u001b[39m token)\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m     \u001b[36mtry\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 95 |\u001b[39m       expect(stored\u001b[33m.\u001b[39mrole\u001b[33m,\u001b[39m \u001b[32m'role must remain \"user\"'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m'user'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 96 |\u001b[39m       expect(res\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m500\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 97 |\u001b[39m     } \u001b[36mfinally\u001b[39m {\n \u001b[90m 98 |\u001b[39m       \u001b[90m// Always restore, so a failing assertion does not leave the shared account as admin.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 54,
+                            "line": 95
+                          },
+                          "message": "Error: role must remain \"user\"\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"user\"\u001b[39m\nReceived: \u001b[31m\"admin\"\u001b[39m\n\n  93 |     const stored = await serverProfile(request, token);\n  94 |     try {\n> 95 |       expect(stored.role, 'role must remain \"user\"').toBe('user');\n     |                                                      ^\n  96 |       expect(res.status()).toBeLessThan(500);\n  97 |     } finally {\n  98 |       // Always restore, so a failing assertion does not leave the shared account as admin.\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:95:54"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:23.960Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-22ebd-e-own-role-via-PUT-users-me-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-22ebd-e-own-role-via-PUT-users-me-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 54,
+                        "line": 95
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-eaa1dad0d1ac79aa11d5",
+              "file": "fr04-profile.spec.js",
+              "line": 87,
+              "column": 3
+            },
+            {
+              "title": "TC-04-16 [negative/security] backend rejects an invalid phone sent directly to the API",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 91,
+                      "error": {
+                        "message": "Error: server-side validation must reject\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m",
+                        "stack": "Error: server-side validation must reject\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:111:58",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                          "column": 58,
+                          "line": 111
+                        },
+                        "snippet": " \u001b[90m 109 |\u001b[39m     \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m res\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n \u001b[90m 110 |\u001b[39m     \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mput(\u001b[32m`${API_URL}/users/me`\u001b[39m\u001b[33m,\u001b[39m { headers\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m data\u001b[33m:\u001b[39m baseline })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 111 |\u001b[39m     expect(status\u001b[33m,\u001b[39m \u001b[32m'server-side validation must reject'\u001b[39m)\u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 112 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 113 |\u001b[39m\n \u001b[90m 114 |\u001b[39m   test(\u001b[32m'TC-04-17 [negative] profile API requires authentication'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                            "column": 58,
+                            "line": 111
+                          },
+                          "message": "Error: server-side validation must reject\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m\n\n  109 |     const status = res.status();\n  110 |     await request.put(`${API_URL}/users/me`, { headers: { Authorization: `Bearer ${token}` }, data: baseline });\n> 111 |     expect(status, 'server-side validation must reject').toBeGreaterThanOrEqual(400);\n      |                                                          ^\n  112 |   });\n  113 |\n  114 |   test('TC-04-17 [negative] profile API requires authentication', async ({ request }) => {\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js:111:58"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:25.320Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-0a0ca-ne-sent-directly-to-the-API-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr04-firefox\\fr04-profile-FR-04-Profile-0a0ca-ne-sent-directly-to-the-API-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr04-profile.spec.js",
+                        "column": 58,
+                        "line": 111
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-1a6233e5f1677e879b25",
+              "file": "fr04-profile.spec.js",
+              "line": 103,
+              "column": 3
+            },
+            {
+              "title": "TC-04-17 [negative] profile API requires authentication",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 41,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:26.050Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-696e78500fc27634e1f0",
+              "file": "fr04-profile.spec.js",
+              "line": 114,
+              "column": 3
+            },
+            {
+              "title": "TC-04-18 [negative] profile page without a session asks the user to log in",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3663,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:26.138Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-3835881580460a11c6b7",
+              "file": "fr04-profile.spec.js",
+              "line": 119,
+              "column": 3
+            },
+            {
+              "title": "TC-04-20 [positive] real UI login leads to an editable profile",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3556,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:14:30.453Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e6771bc2a4279a53f9e-5ad93fe8b5a1f8fb8f15",
+              "file": "fr04-profile.spec.js",
+              "line": 124,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-17T17:13:01.563Z",
+    "duration": 93005.426,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,1211 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\KiemThuPM\\hw04-eshop-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/fr17-coupon-admin.spec.js",
+      "--project=firefox"
+    ],
+    "configFile": "D:\\KiemThuPM\\hw04-eshop-automation\\playwright.config.js",
+    "rootDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120034",
+      "Run at (ISO)": "2026-11-17T17:19:57.938Z",
+      "Run tag": "fr17-firefox",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr17-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:19:57.938Z",
+          "Run tag": "fr17-firefox",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr17-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:19:57.938Z",
+          "Run tag": "fr17-firefox",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr17-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:19:57.938Z",
+          "Run tag": "fr17-firefox",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-17T17:19:57.938Z",
+          "Run tag": "fr17-firefox",
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "snapshotDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "video": "off",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/fr17-firefox/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/fr17-firefox/html",
+          "open": "never",
+          "title": "EShop HW04 - fr17-firefox | Run by: 23120034 | 2026-11-17T17:19:57.938Z"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr17-coupon-admin.spec.js",
+      "file": "fr17-coupon-admin.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-17 Coupon CRUD - data-driven create rules",
+          "file": "fr17-coupon-admin.spec.js",
+          "line": 31,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-17-01 [positive] create a valid percent coupon",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5404,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:19:58.580Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-87f26e595d815956496a",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-02 [positive] create a valid fixed-amount coupon",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4032,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:04.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-4f294ca6ee6191598614",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-03 [edge] boundary: min_order_amount = 0 is allowed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3981,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:08.729Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-91377169070eb588077d",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-04 [edge] boundary: max_uses_per_user = 1 (lowest valid)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3942,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:12.729Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-a20445539cb03cff4a14",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-05 [negative] discount_value = 0 must be rejected (must be positive)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4145,
+                      "error": {
+                        "message": "Error: invalid coupon \"AUTOVAL0-MWKYJSDC\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOVAL0-MWKYJSDC\", \"discount_value\": 0, \"expired_at\": \"2099-12-31\", \"id\": 35, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"fixed\"}]\u001b[39m",
+                        "stack": "Error: invalid coupon \"AUTOVAL0-MWKYJSDC\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOVAL0-MWKYJSDC\", \"discount_value\": 0, \"expired_at\": \"2099-12-31\", \"id\": 35, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"fixed\"}]\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                          "column": 72,
+                          "line": 82
+                        },
+                        "snippet": " \u001b[90m 80 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 81 |\u001b[39m         \u001b[90m// rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m         expect(matches\u001b[33m,\u001b[39m \u001b[32m`invalid coupon \"${code}\" must NOT be stored`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m         expect(after\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(before\u001b[33m.\u001b[39mlength)\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m       }\n \u001b[90m 85 |\u001b[39m     })\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                            "column": 72,
+                            "line": 82
+                          },
+                          "message": "Error: invalid coupon \"AUTOVAL0-MWKYJSDC\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOVAL0-MWKYJSDC\", \"discount_value\": 0, \"expired_at\": \"2099-12-31\", \"id\": 35, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"fixed\"}]\u001b[39m\n\n  80 |       } else {\n  81 |         // rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\n> 82 |         expect(matches, `invalid coupon \"${code}\" must NOT be stored`).toHaveLength(0);\n     |                                                                        ^\n  83 |         expect(after.length).toBe(before.length);\n  84 |       }\n  85 |     });\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:16.694Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-83268--rejected-must-be-positive--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-83268--rejected-must-be-positive--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-83268--rejected-must-be-positive--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                        "column": 72,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-5a081dbbe2f900c7dc4b",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-06 [negative] negative discount_value must be rejected",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5314,
+                      "error": {
+                        "message": "Error: invalid coupon \"AUTOVALNEG-MWKYKAF3\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOVALNEG-MWKYKAF3\", \"discount_value\": -5000, \"expired_at\": \"2099-12-31\", \"id\": 36, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"fixed\"}]\u001b[39m",
+                        "stack": "Error: invalid coupon \"AUTOVALNEG-MWKYKAF3\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOVALNEG-MWKYKAF3\", \"discount_value\": -5000, \"expired_at\": \"2099-12-31\", \"id\": 36, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"fixed\"}]\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                          "column": 72,
+                          "line": 82
+                        },
+                        "snippet": " \u001b[90m 80 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 81 |\u001b[39m         \u001b[90m// rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m         expect(matches\u001b[33m,\u001b[39m \u001b[32m`invalid coupon \"${code}\" must NOT be stored`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m         expect(after\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(before\u001b[33m.\u001b[39mlength)\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m       }\n \u001b[90m 85 |\u001b[39m     })\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                            "column": 72,
+                            "line": 82
+                          },
+                          "message": "Error: invalid coupon \"AUTOVALNEG-MWKYKAF3\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOVALNEG-MWKYKAF3\", \"discount_value\": -5000, \"expired_at\": \"2099-12-31\", \"id\": 36, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"fixed\"}]\u001b[39m\n\n  80 |       } else {\n  81 |         // rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\n> 82 |         expect(matches, `invalid coupon \"${code}\" must NOT be stored`).toHaveLength(0);\n     |                                                                        ^\n  83 |         expect(after.length).toBe(before.length);\n  84 |       }\n  85 |     });\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:21.971Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-80d05-ount-value-must-be-rejected-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-80d05-ount-value-must-be-rejected-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-80d05-ount-value-must-be-rejected-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                        "column": 72,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-15f32711fb52aef79b7a",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-07 [negative] negative min_order_amount (-1) must be rejected",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5126,
+                      "error": {
+                        "message": "Error: invalid coupon \"AUTOMINNEG-MWKYKFWU\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOMINNEG-MWKYKFWU\", \"discount_value\": 5000, \"expired_at\": \"2099-12-31\", \"id\": 37, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": -1, \"type\": \"fixed\"}]\u001b[39m",
+                        "stack": "Error: invalid coupon \"AUTOMINNEG-MWKYKFWU\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOMINNEG-MWKYKFWU\", \"discount_value\": 5000, \"expired_at\": \"2099-12-31\", \"id\": 37, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": -1, \"type\": \"fixed\"}]\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                          "column": 72,
+                          "line": 82
+                        },
+                        "snippet": " \u001b[90m 80 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 81 |\u001b[39m         \u001b[90m// rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m         expect(matches\u001b[33m,\u001b[39m \u001b[32m`invalid coupon \"${code}\" must NOT be stored`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m         expect(after\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(before\u001b[33m.\u001b[39mlength)\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m       }\n \u001b[90m 85 |\u001b[39m     })\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                            "column": 72,
+                            "line": 82
+                          },
+                          "message": "Error: invalid coupon \"AUTOMINNEG-MWKYKFWU\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOMINNEG-MWKYKFWU\", \"discount_value\": 5000, \"expired_at\": \"2099-12-31\", \"id\": 37, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": -1, \"type\": \"fixed\"}]\u001b[39m\n\n  80 |       } else {\n  81 |         // rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\n> 82 |         expect(matches, `invalid coupon \"${code}\" must NOT be stored`).toHaveLength(0);\n     |                                                                        ^\n  83 |         expect(after.length).toBe(before.length);\n  84 |       }\n  85 |     });\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:29.090Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-81213--amount--1-must-be-rejected-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-81213--amount--1-must-be-rejected-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-81213--amount--1-must-be-rejected-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                        "column": 72,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-b3c78369504dd7ee76f9",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-08 [negative] max_uses_per_user = 0 must be rejected (must be >= 1)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5107,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:36.096Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-9d48a34be3ffe3fa7cf5",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-09 [negative] negative max_uses_per_user must be rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4051,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:41.814Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-273bed5a7d77f6e3775e",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-10 [negative] percent discount above 100% must be rejected",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4163,
+                      "error": {
+                        "message": "Error: invalid coupon \"AUTOPCT150-MWKYKLBG\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOPCT150-MWKYKLBG\", \"discount_value\": 150, \"expired_at\": \"2099-12-31\", \"id\": 38, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"percent\"}]\u001b[39m",
+                        "stack": "Error: invalid coupon \"AUTOPCT150-MWKYKLBG\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOPCT150-MWKYKLBG\", \"discount_value\": 150, \"expired_at\": \"2099-12-31\", \"id\": 38, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"percent\"}]\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                          "column": 72,
+                          "line": 82
+                        },
+                        "snippet": " \u001b[90m 80 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 81 |\u001b[39m         \u001b[90m// rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m         expect(matches\u001b[33m,\u001b[39m \u001b[32m`invalid coupon \"${code}\" must NOT be stored`\u001b[39m)\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m         expect(after\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(before\u001b[33m.\u001b[39mlength)\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m       }\n \u001b[90m 85 |\u001b[39m     })\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                            "column": 72,
+                            "line": 82
+                          },
+                          "message": "Error: invalid coupon \"AUTOPCT150-MWKYKLBG\" must NOT be stored\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[{\"code\": \"AUTOPCT150-MWKYKLBG\", \"discount_value\": 150, \"expired_at\": \"2099-12-31\", \"id\": 38, \"is_active\": 1, \"max_uses_per_user\": 1, \"min_order_amount\": 0, \"type\": \"percent\"}]\u001b[39m\n\n  80 |       } else {\n  81 |         // rejected: nothing may be stored, whatever mechanism blocked it (HTML5, UI or API)\n> 82 |         expect(matches, `invalid coupon \"${code}\" must NOT be stored`).toHaveLength(0);\n     |                                                                        ^\n  83 |         expect(after.length).toBe(before.length);\n  84 |       }\n  85 |     });\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:82:72"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:45.885Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-a962c--above-100-must-be-rejected-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-a962c--above-100-must-be-rejected-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-a962c--above-100-must-be-rejected-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                        "column": 72,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-8ab6f4dd1e7dad6a565f",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-11 [negative] empty discount_value is blocked by HTML5 required",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4904,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:51.171Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-e6e3a4a6a7bb4284f8a3",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-12 [negative] empty expired_at is blocked by HTML5 required",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3905,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:20:56.768Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-f0d48fce2fd7e545262a",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-13 [negative] duplicate code SAVE10 must be rejected (code is unique)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3852,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:00.695Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-8dc74a7fd2cbefbe4f6d",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-14 [edge] lowercase code typed by admin is stored upper-case",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3921,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:04.573Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-bbb7fa03c717f2dd1b6e",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            },
+            {
+              "title": "TC-17-15 [edge] already-expired date is accepted and flagged 'Hết hạn' in the list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3987,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:08.517Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-cb33d5277df35d56ff50",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 46,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "FR-17 Coupon CRUD - list, delete, access",
+          "file": "fr17-coupon-admin.spec.js",
+          "line": 89,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-17-16 [positive] list shows the seeded coupons with correct formatting",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3030,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:12.521Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-2b6de1ba3e513bf8b46c",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 90,
+              "column": 3
+            },
+            {
+              "title": "TC-17-17 [positive] admin can delete a coupon from the list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3179,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:15.567Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-aa75be5ea0d38e6b55e0",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "TC-17-18 [negative] admin login with a wrong password is refused",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2927,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:18.763Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-8e479f02f7df5b2092b7",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 129,
+              "column": 3
+            },
+            {
+              "title": "TC-17-19 [negative] a normal (non-admin) user cannot sign in to the admin app",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2959,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:21.701Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-16e1229164d6f25b6d7c",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 134,
+              "column": 3
+            },
+            {
+              "title": "TC-17-20 [positive] real UI login as admin reaches the dashboard and coupon tab",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3649,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:24.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-ea64a0adc2a629d818aa",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 139,
+              "column": 3
+            },
+            {
+              "title": "TC-17-21 [negative/security] creating a coupon without a token is refused (401/403)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:28.337Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-7f8c98d53590000d3060",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 149,
+              "column": 3
+            },
+            {
+              "title": "TC-17-22 [negative/security] a normal user token must not create coupons (role check)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 66,
+                      "error": {
+                        "message": "Error: non-admin must get 403\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: non-admin must get 403\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:169:46",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                          "column": 46,
+                          "line": 169
+                        },
+                        "snippet": " \u001b[90m 167 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mcode \u001b[33m===\u001b[39m code) \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mdelete(\u001b[32m`${API_URL}/admin/coupons/${c.id}`\u001b[39m\u001b[33m,\u001b[39m { headers\u001b[33m:\u001b[39m auth(admin) })\u001b[33m;\u001b[39m\n \u001b[90m 168 |\u001b[39m     }\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 169 |\u001b[39m     expect(status\u001b[33m,\u001b[39m \u001b[32m'non-admin must get 403'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m403\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 170 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 171 |\u001b[39m\n \u001b[90m 172 |\u001b[39m   test(\u001b[32m'TC-17-23 [negative/security] a normal user token must not delete coupons (role check)'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                            "column": 46,
+                            "line": 169
+                          },
+                          "message": "Error: non-admin must get 403\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n  167 |       if (c.code === code) await request.delete(`${API_URL}/admin/coupons/${c.id}`, { headers: auth(admin) });\n  168 |     }\n> 169 |     expect(status, 'non-admin must get 403').toBe(403);\n      |                                              ^\n  170 |   });\n  171 |\n  172 |   test('TC-17-23 [negative/security] a normal user token must not delete coupons (role check)', async ({ request }) => {\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:169:46"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:28.374Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-93a21--create-coupons-role-check--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-93a21--create-coupons-role-check--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                        "column": 46,
+                        "line": 169
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-0b5ecd6072683be1f79c",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 156,
+              "column": 3
+            },
+            {
+              "title": "TC-17-23 [negative/security] a normal user token must not delete coupons (role check)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 104,
+                      "error": {
+                        "message": "Error: non-admin must get 403\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: non-admin must get 403\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:184:46",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                          "column": 46,
+                          "line": 184
+                        },
+                        "snippet": " \u001b[90m 182 |\u001b[39m     \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m res\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n \u001b[90m 183 |\u001b[39m     \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mdelete(\u001b[32m`${API_URL}/admin/coupons/${id}`\u001b[39m\u001b[33m,\u001b[39m { headers\u001b[33m:\u001b[39m auth(admin) })\u001b[33m;\u001b[39m \u001b[90m// cleanup\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 184 |\u001b[39m     expect(status\u001b[33m,\u001b[39m \u001b[32m'non-admin must get 403'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m403\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 185 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 186 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 187 |\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                            "column": 46,
+                            "line": 184
+                          },
+                          "message": "Error: non-admin must get 403\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n  182 |     const status = res.status();\n  183 |     await request.delete(`${API_URL}/admin/coupons/${id}`, { headers: auth(admin) }); // cleanup\n> 184 |     expect(status, 'non-admin must get 403').toBe(403);\n      |                                              ^\n  185 |   });\n  186 | });\n  187 |\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js:184:46"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-17T17:21:29.544Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-9f223--delete-coupons-role-check--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr17-firefox\\fr17-coupon-admin-FR-17-Co-9f223--delete-coupons-role-check--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr17-coupon-admin.spec.js",
+                        "column": 46,
+                        "line": 184
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "19f8cc5146cf587383af-c3f8b1aad923c2d42de5",
+              "file": "fr17-coupon-admin.spec.js",
+              "line": 172,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-17T17:19:57.941Z",
+    "duration": 91800.03,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\KiemThuPM\\hw04-eshop-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/fr09-coupon-checkout.spec.js",
+      "--project=chromium",
+      "-g",
+      "TC-09-2[234]"
+    ],
+    "configFile": "D:\\KiemThuPM\\hw04-eshop-automation\\playwright.config.js",
+    "rootDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120034",
+      "Run at (ISO)": "2026-11-18T02:36:57.692Z",
+      "Run tag": "dev-date",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/dev-date",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:36:57.692Z",
+          "Run tag": "dev-date",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/dev-date",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:36:57.692Z",
+          "Run tag": "dev-date",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/dev-date",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:36:57.692Z",
+          "Run tag": "dev-date",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\dev-date",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:36:57.692Z",
+          "Run tag": "dev-date",
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "snapshotDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "video": "off",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/dev-date/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/dev-date/html",
+          "open": "never",
+          "title": "EShop HW04 - dev-date | Run by: 23120034 | 2026-11-18T02:36:57.692Z"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr09-coupon-checkout.spec.js",
+      "file": "fr09-coupon-checkout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-09 Coupon expiry date boundary (C2)",
+          "file": "fr09-coupon-checkout.spec.js",
+          "line": 79,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-09-22 [edge] date boundary: coupon expired yesterday is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1336,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:36:58.747Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-3d5ca38bc6af0844a509",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 81,
+              "column": 5
+            },
+            {
+              "title": "TC-09-23 [edge] date boundary: coupon expiring TODAY is rejected (current date must be before expired_at)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 650,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:37:02.346Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-d86321451d56c41a174f",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 81,
+              "column": 5
+            },
+            {
+              "title": "TC-09-24 [edge] date boundary: coupon expiring tomorrow is still valid",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 744,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:37:03.013Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-5c00780fa6f0843e3792",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 81,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T02:36:57.696Z",
+    "duration": 6223.672,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

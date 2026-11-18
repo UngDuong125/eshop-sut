@@ -1,0 +1,1361 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\KiemThuPM\\hw04-eshop-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/fr09-coupon-checkout.spec.js",
+      "--project=webkit"
+    ],
+    "configFile": "D:\\KiemThuPM\\hw04-eshop-automation\\playwright.config.js",
+    "rootDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23120034",
+      "Run at (ISO)": "2026-11-18T02:40:55.812Z",
+      "Run tag": "fr09-webkit",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr09-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:40:55.812Z",
+          "Run tag": "fr09-webkit",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr09-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:40:55.812Z",
+          "Run tag": "fr09-webkit",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/KiemThuPM/hw04-eshop-automation/test-results/fr09-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:40:55.812Z",
+          "Run tag": "fr09-webkit",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/KiemThuPM/hw04-eshop-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23120034",
+          "Run at (ISO)": "2026-11-18T02:40:55.812Z",
+          "Run tag": "fr09-webkit",
+          "actualWorkers": 1
+        },
+        "name": "webkit",
+        "testDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "snapshotDir": "D:\\KiemThuPM\\hw04-eshop-automation\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:5173",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "video": "off",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/fr09-webkit/results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/fr09-webkit/html",
+          "open": "never",
+          "title": "EShop HW04 - fr09-webkit | Run by: 23120034 | 2026-11-18T02:40:55.812Z"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr09-coupon-checkout.spec.js",
+      "file": "fr09-coupon-checkout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-09 Coupon at checkout - data-driven rules C1..C5",
+          "file": "fr09-coupon-checkout.spec.js",
+          "line": 36,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-09-01 [positive] SAVE10 (10%) on a 400,000 order",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8364,
+                      "error": {
+                        "message": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m40000\u001b[39m\nReceived: \u001b[31m-3600000\u001b[39m",
+                        "stack": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m40000\u001b[39m\nReceived: \u001b[31m-3600000\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:57:47",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                          "column": 47,
+                          "line": 57
+                        },
+                        "snippet": " \u001b[90m 55 |\u001b[39m         \u001b[36mconst\u001b[39m finalAmt \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Thành tiền:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[90m// Pattern 2 - exact numeric equality against the value computed from the SRS formula\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m         expect\u001b[33m.\u001b[39msoft(saved\u001b[33m,\u001b[39m \u001b[32m'discount amount'\u001b[39m)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mdiscount)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m         expect\u001b[33m.\u001b[39msoft(finalAmt\u001b[33m,\u001b[39m \u001b[32m'final amount'\u001b[39m)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mfinal)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m         \u001b[90m// Pattern 3 - the summary line must agree with the result panel\u001b[39m\n \u001b[90m 60 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Tổng thanh toán:/\u001b[39m))\u001b[33m.\u001b[39mtoContainText(c\u001b[33m.\u001b[39mfinal\u001b[33m.\u001b[39mtoLocaleString(\u001b[32m'en-US'\u001b[39m))\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 47,
+                            "line": 57
+                          },
+                          "message": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m40000\u001b[39m\nReceived: \u001b[31m-3600000\u001b[39m\n\n  55 |         const finalAmt = toInt(await page.getByText(/Thành tiền:/).locator('strong').innerText());\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n> 57 |         expect.soft(saved, 'discount amount').toBe(c.discount);\n     |                                               ^\n  58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n  60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:57:47"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 47,
+                            "line": 58
+                          },
+                          "message": "Error: final amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m360000\u001b[39m\nReceived: \u001b[31m4000000\u001b[39m\n\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n  57 |         expect.soft(saved, 'discount amount').toBe(c.discount);\n> 58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n     |                                               ^\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n  60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n  61 |       } else {\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:58:47"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 63,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Tổng thanh toán:/)\nExpected substring: \u001b[32m\"\u001b[7m36\u001b[27m0,000\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mTổng thanh toán: 4,00\u001b[27m0,000\u001b[7m ₫\u001b[27m\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByText(/Tổng thanh toán:/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Tổng thanh toán:/)\u001b[22m\n\u001b[2m    13 × locator resolved to <span class=\"font-bold text-xl\">Tổng thanh toán: 4,000,000 ₫</span>\u001b[22m\n\u001b[2m       - unexpected value \"Tổng thanh toán: 4,000,000 ₫\"\u001b[22m\n\n\n  58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n> 60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n     |                                                               ^\n  61 |       } else {\n  62 |         // Pattern 4 - regex on the error message, and absence of any discount result\n  63 |         await expect(page.locator('p.text-red-600.text-sm')).toBeVisible();\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:60:63"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:40:56.803Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-8db5d-AVE10-10-on-a-400-000-order-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-8db5d-AVE10-10-on-a-400-000-order-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-8db5d-AVE10-10-on-a-400-000-order-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                        "column": 47,
+                        "line": 57
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-796c8e929a8ab55e2d99",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-02 [edge] boundary: total EQUALS min_order_amount (>= must apply)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7280,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:53:60",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                          "column": 60,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'applied'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - visibility of the success message\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Áp dụng thành công/\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mconst\u001b[39m saved \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Tiết kiệm:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m         \u001b[36mconst\u001b[39m finalAmt \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Thành tiền:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[90m// Pattern 2 - exact numeric equality against the value computed from the SRS formula\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 60,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n\n\n  51 |       if (c.expect === 'applied') {\n  52 |         // Pattern 1 - visibility of the success message\n> 53 |         await expect(page.getByText(/Áp dụng thành công/)).toBeVisible();\n     |                                                            ^\n  54 |         const saved = toInt(await page.getByText(/Tiết kiệm:/).locator('strong').innerText());\n  55 |         const finalAmt = toInt(await page.getByText(/Thành tiền:/).locator('strong').innerText());\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:53:60"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:10.596Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-3323c-in-order-amount-must-apply--webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-3323c-in-order-amount-must-apply--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-3323c-in-order-amount-must-apply--webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                        "column": 60,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-ccadc42a3bf6b70a48b3",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-03 [edge] boundary: total 1 below min_order_amount",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2289,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:19.893Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-901ee30db21af153fecd",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-04 [edge] boundary: total just above min_order_amount",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7238,
+                      "error": {
+                        "message": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m30001\u001b[39m\nReceived: \u001b[31m-2700090\u001b[39m",
+                        "stack": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m30001\u001b[39m\nReceived: \u001b[31m-2700090\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:57:47",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                          "column": 47,
+                          "line": 57
+                        },
+                        "snippet": " \u001b[90m 55 |\u001b[39m         \u001b[36mconst\u001b[39m finalAmt \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Thành tiền:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[90m// Pattern 2 - exact numeric equality against the value computed from the SRS formula\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m         expect\u001b[33m.\u001b[39msoft(saved\u001b[33m,\u001b[39m \u001b[32m'discount amount'\u001b[39m)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mdiscount)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m         expect\u001b[33m.\u001b[39msoft(finalAmt\u001b[33m,\u001b[39m \u001b[32m'final amount'\u001b[39m)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mfinal)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m         \u001b[90m// Pattern 3 - the summary line must agree with the result panel\u001b[39m\n \u001b[90m 60 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Tổng thanh toán:/\u001b[39m))\u001b[33m.\u001b[39mtoContainText(c\u001b[33m.\u001b[39mfinal\u001b[33m.\u001b[39mtoLocaleString(\u001b[32m'en-US'\u001b[39m))\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 47,
+                            "line": 57
+                          },
+                          "message": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m30001\u001b[39m\nReceived: \u001b[31m-2700090\u001b[39m\n\n  55 |         const finalAmt = toInt(await page.getByText(/Thành tiền:/).locator('strong').innerText());\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n> 57 |         expect.soft(saved, 'discount amount').toBe(c.discount);\n     |                                               ^\n  58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n  60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:57:47"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 47,
+                            "line": 58
+                          },
+                          "message": "Error: final amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m270009\u001b[39m\nReceived: \u001b[31m3000100\u001b[39m\n\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n  57 |         expect.soft(saved, 'discount amount').toBe(c.discount);\n> 58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n     |                                               ^\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n  60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n  61 |       } else {\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:58:47"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 63,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Tổng thanh toán:/)\nExpected substring: \u001b[32m\"\u001b[7m27\u001b[27m0,00\u001b[7m9\u001b[27m\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mTổng thanh toán: 3,00\u001b[27m0,\u001b[7m1\u001b[27m00\u001b[7m ₫\u001b[27m\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByText(/Tổng thanh toán:/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Tổng thanh toán:/)\u001b[22m\n\u001b[2m    13 × locator resolved to <span class=\"font-bold text-xl\">Tổng thanh toán: 3,000,100 ₫</span>\u001b[22m\n\u001b[2m       - unexpected value \"Tổng thanh toán: 3,000,100 ₫\"\u001b[22m\n\n\n  58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n> 60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n     |                                                               ^\n  61 |       } else {\n  62 |         // Pattern 4 - regex on the error message, and absence of any discount result\n  63 |         await expect(page.locator('p.text-red-600.text-sm')).toBeVisible();\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:60:63"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:22.425Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-42003-just-above-min-order-amount-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-42003-just-above-min-order-amount-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-42003-just-above-min-order-amount-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                        "column": 47,
+                        "line": 57
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-ebd16fea43f5e59cb4aa",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-05 [positive] BIGBUY fixed 50,000 at exactly 500,000",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7301,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:53:60",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                          "column": 60,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'applied'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - visibility of the success message\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Áp dụng thành công/\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mconst\u001b[39m saved \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Tiết kiệm:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m         \u001b[36mconst\u001b[39m finalAmt \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Thành tiền:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[90m// Pattern 2 - exact numeric equality against the value computed from the SRS formula\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 60,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n\n\n  51 |       if (c.expect === 'applied') {\n  52 |         // Pattern 1 - visibility of the success message\n> 53 |         await expect(page.getByText(/Áp dụng thành công/)).toBeVisible();\n     |                                                            ^\n  54 |         const saved = toInt(await page.getByText(/Tiết kiệm:/).locator('strong').innerText());\n  55 |         const finalAmt = toInt(await page.getByText(/Thành tiền:/).locator('strong').innerText());\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:53:60"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:30.861Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-179d7-d-50-000-at-exactly-500-000-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-179d7-d-50-000-at-exactly-500-000-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-179d7-d-50-000-at-exactly-500-000-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                        "column": 60,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-b7b15bf340c1a752092b",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-06 [edge] BIGBUY one below threshold (499,999)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1751,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:39.909Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-c04e49c2888951c9976b",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-07 [positive] VIP100 fixed 100,000 at threshold 300,000",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7357,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:53:60",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                          "column": 60,
+                          "line": 53
+                        },
+                        "snippet": " \u001b[90m 51 |\u001b[39m       \u001b[36mif\u001b[39m (c\u001b[33m.\u001b[39mexpect \u001b[33m===\u001b[39m \u001b[32m'applied'\u001b[39m) {\n \u001b[90m 52 |\u001b[39m         \u001b[90m// Pattern 1 - visibility of the success message\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Áp dụng thành công/\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m         \u001b[36mconst\u001b[39m saved \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Tiết kiệm:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m         \u001b[36mconst\u001b[39m finalAmt \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Thành tiền:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[90m// Pattern 2 - exact numeric equality against the value computed from the SRS formula\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 60,
+                            "line": 53
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText(/Áp dụng thành công/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/)\u001b[22m\n\n\n  51 |       if (c.expect === 'applied') {\n  52 |         // Pattern 1 - visibility of the success message\n> 53 |         await expect(page.getByText(/Áp dụng thành công/)).toBeVisible();\n     |                                                            ^\n  54 |         const saved = toInt(await page.getByText(/Tiết kiệm:/).locator('strong').innerText());\n  55 |         const finalAmt = toInt(await page.getByText(/Thành tiền:/).locator('strong').innerText());\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:53:60"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:41.819Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-529e2-00-000-at-threshold-300-000-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-529e2-00-000-at-threshold-300-000-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-529e2-00-000-at-threshold-300-000-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                        "column": 60,
+                        "line": 53
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-7d4d7196e195cd20ed1e",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-08 [positive] VIP100 on a large order (1,000,000)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2080,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:50.657Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-515345402962189f176b",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-09 [negative] EXPIRED coupon (C2)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2405,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:52.988Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-5f9dd552bdb2bc00557e",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-10 [negative] non-existent code (C1)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2107,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:55.438Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-7d38f2069bd4edb86c12",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-11 [edge] lowercase code is accepted (case-insensitive input)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7265,
+                      "error": {
+                        "message": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m40000\u001b[39m\nReceived: \u001b[31m-3600000\u001b[39m",
+                        "stack": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m40000\u001b[39m\nReceived: \u001b[31m-3600000\u001b[39m\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:57:47",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                          "column": 47,
+                          "line": 57
+                        },
+                        "snippet": " \u001b[90m 55 |\u001b[39m         \u001b[36mconst\u001b[39m finalAmt \u001b[33m=\u001b[39m toInt(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Thành tiền:/\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'strong'\u001b[39m)\u001b[33m.\u001b[39minnerText())\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m         \u001b[90m// Pattern 2 - exact numeric equality against the value computed from the SRS formula\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 57 |\u001b[39m         expect\u001b[33m.\u001b[39msoft(saved\u001b[33m,\u001b[39m \u001b[32m'discount amount'\u001b[39m)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mdiscount)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 58 |\u001b[39m         expect\u001b[33m.\u001b[39msoft(finalAmt\u001b[33m,\u001b[39m \u001b[32m'final amount'\u001b[39m)\u001b[33m.\u001b[39mtoBe(c\u001b[33m.\u001b[39mfinal)\u001b[33m;\u001b[39m\n \u001b[90m 59 |\u001b[39m         \u001b[90m// Pattern 3 - the summary line must agree with the result panel\u001b[39m\n \u001b[90m 60 |\u001b[39m         \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39msoft(page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Tổng thanh toán:/\u001b[39m))\u001b[33m.\u001b[39mtoContainText(c\u001b[33m.\u001b[39mfinal\u001b[33m.\u001b[39mtoLocaleString(\u001b[32m'en-US'\u001b[39m))\u001b[33m;\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 47,
+                            "line": 57
+                          },
+                          "message": "Error: discount amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m40000\u001b[39m\nReceived: \u001b[31m-3600000\u001b[39m\n\n  55 |         const finalAmt = toInt(await page.getByText(/Thành tiền:/).locator('strong').innerText());\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n> 57 |         expect.soft(saved, 'discount amount').toBe(c.discount);\n     |                                               ^\n  58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n  60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:57:47"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 47,
+                            "line": 58
+                          },
+                          "message": "Error: final amount\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m360000\u001b[39m\nReceived: \u001b[31m4000000\u001b[39m\n\n  56 |         // Pattern 2 - exact numeric equality against the value computed from the SRS formula\n  57 |         expect.soft(saved, 'discount amount').toBe(c.discount);\n> 58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n     |                                               ^\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n  60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n  61 |       } else {\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:58:47"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 63,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Tổng thanh toán:/)\nExpected substring: \u001b[32m\"\u001b[7m36\u001b[27m0,000\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mTổng thanh toán: 4,00\u001b[27m0,000\u001b[7m ₫\u001b[27m\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toContainText\" getByText(/Tổng thanh toán:/) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Tổng thanh toán:/)\u001b[22m\n\u001b[2m    13 × locator resolved to <span class=\"font-bold text-xl\">Tổng thanh toán: 4,000,000 ₫</span>\u001b[22m\n\u001b[2m       - unexpected value \"Tổng thanh toán: 4,000,000 ₫\"\u001b[22m\n\n\n  58 |         expect.soft(finalAmt, 'final amount').toBe(c.final);\n  59 |         // Pattern 3 - the summary line must agree with the result panel\n> 60 |         await expect.soft(page.getByText(/Tổng thanh toán:/)).toContainText(c.final.toLocaleString('en-US'));\n     |                                                               ^\n  61 |       } else {\n  62 |         // Pattern 4 - regex on the error message, and absence of any discount result\n  63 |         await expect(page.locator('p.text-red-600.text-sm')).toBeVisible();\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:60:63"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:41:57.609Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-eff1d-ted-case-insensitive-input--webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-eff1d-ted-case-insensitive-input--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-eff1d-ted-case-insensitive-input--webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                        "column": 47,
+                        "line": 57
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-75f2571b692acb22369a",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-12 [edge] code with leading/trailing spaces is trimmed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2220,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:06.094Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-1d7a3013e6d88010b0a9",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-13 [edge] order total 0 is below every threshold",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1811,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:08.531Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-e16895973ed56a671d1b",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-14 [negative] guest (not logged in) must not get a coupon (C4)",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6633,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('p.text-red-600.text-sm')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('p.text-red-600.text-sm') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p.text-red-600.text-sm')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('p.text-red-600.text-sm')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('p.text-red-600.text-sm') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p.text-red-600.text-sm')\u001b[22m\n\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:63:62",
+                        "location": {
+                          "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                          "column": 62,
+                          "line": 63
+                        },
+                        "snippet": " \u001b[90m 61 |\u001b[39m       } \u001b[36melse\u001b[39m {\n \u001b[90m 62 |\u001b[39m         \u001b[90m// Pattern 4 - regex on the error message, and absence of any discount result\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 63 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'p.text-red-600.text-sm'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 64 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'p.text-red-600.text-sm'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(c\u001b[33m.\u001b[39merror\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m 65 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[35m/Thành tiền:/\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m       }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                            "column": 62,
+                            "line": 63
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('p.text-red-600.text-sm')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('p.text-red-600.text-sm') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p.text-red-600.text-sm')\u001b[22m\n\n\n  61 |       } else {\n  62 |         // Pattern 4 - regex on the error message, and absence of any discount result\n> 63 |         await expect(page.locator('p.text-red-600.text-sm')).toBeVisible();\n     |                                                              ^\n  64 |         await expect(page.locator('p.text-red-600.text-sm')).toContainText(new RegExp(c.error, 'i'));\n  65 |         await expect(page.getByText(/Thành tiền:/)).toHaveCount(0);\n  66 |       }\n    at D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js:63:62"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:10.381Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-aba97-n-must-not-get-a-coupon-C4--webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-aba97-n-must-not-get-a-coupon-C4--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\KiemThuPM\\hw04-eshop-automation\\test-results\\fr09-webkit\\fr09-coupon-checkout-FR-09-aba97-n-must-not-get-a-coupon-C4--webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\KiemThuPM\\hw04-eshop-automation\\tests\\fr09-coupon-checkout.spec.js",
+                        "column": 62,
+                        "line": 63
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-b3ec0252db18f769fa2b",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-15 [negative] per-user limit reached: VIP100 already used 2/2 (C5)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1869,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:18.057Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-634f4a1d065b0554297a",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-16 [edge] per-user limit not reached: VIP100 used 1/2 still applies",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1697,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:20.069Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-2da67936fbb19994682a",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            },
+            {
+              "title": "TC-09-17 [negative] per-user limit reached: SAVE10 already used 1/1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1691,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:21.807Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-f5c6c5d685dca9b279cc",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 38,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "FR-09 Coupon expiry date boundary (C2)",
+          "file": "fr09-coupon-checkout.spec.js",
+          "line": 82,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-09-22 [edge] date boundary: coupon expired yesterday is rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1581,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:23.532Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-1067ce561a0a4d5a40e4",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 84,
+              "column": 5
+            },
+            {
+              "title": "TC-09-23 [edge] date boundary: coupon expiring TODAY is rejected (current date must be before expired_at)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1442,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:25.153Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-61893cf3f87c9cd2c818",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 84,
+              "column": 5
+            },
+            {
+              "title": "TC-09-24 [edge] date boundary: coupon expiring tomorrow is still valid",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1558,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:26.638Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-40af5d6f5b03cb6c337f",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 84,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "FR-09 Coupon UI state",
+          "file": "fr09-coupon-checkout.spec.js",
+          "line": 119,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-09-18 [negative] empty code keeps the Apply button disabled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1116,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:28.234Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-3624bd3b2cf03e767c23",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 121,
+              "column": 5
+            },
+            {
+              "title": "TC-09-19 [negative] whitespace-only code keeps the Apply button disabled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1139,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:29.414Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-8d74787515d08009480e",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 121,
+              "column": 5
+            },
+            {
+              "title": "TC-09-20 [positive] end-to-end: add product, checkout with VIP100, order succeeds",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "known-defect",
+                      "description": "FR-06: first \"Thêm vào giỏ hàng\" click does nothing"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2840,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:30.603Z",
+                      "annotations": [
+                        {
+                          "type": "known-defect",
+                          "description": "FR-06: first \"Thêm vào giỏ hàng\" click does nothing"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-ce59542587c7d52429f5",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 128,
+              "column": 3
+            },
+            {
+              "title": "TC-09-21 [negative/security] apply-coupon API must reject a request with no code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 34,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:42:33.502Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "85060eb27c115e36ea33-0fae6aa819a21a29b723",
+              "file": "fr09-coupon-checkout.spec.js",
+              "line": 157,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T02:40:55.817Z",
+    "duration": 97851.321,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}
