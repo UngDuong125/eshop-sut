@@ -1,0 +1,27 @@
+{
+  "note": "Expected values are derived from the SRS (FR-09), NOT from the SUT behaviour. percent: discount = total*value/100; fixed: discount = value. Threshold is >= min_order_amount.",
+  "cases": [
+    { "id": "TC-09-01", "type": "positive", "title": "SAVE10 (10%) on a 400,000 order", "code": "SAVE10", "total": 400000, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 40000, "final": 360000 },
+    { "id": "TC-09-02", "type": "edge",     "title": "boundary: total EQUALS min_order_amount (>= must apply)", "code": "SAVE10", "total": 300000, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 30000, "final": 270000 },
+    { "id": "TC-09-03", "type": "edge",     "title": "boundary: total 1 below min_order_amount", "code": "SAVE10", "total": 299999, "loggedIn": true, "usesBefore": 0, "expect": "rejected", "error": "chưa đủ giá trị tối thiểu" },
+    { "id": "TC-09-04", "type": "edge",     "title": "boundary: total just above min_order_amount", "code": "SAVE10", "total": 300010, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 30001, "final": 270009 },
+    { "id": "TC-09-05", "type": "positive", "title": "BIGBUY fixed 50,000 at exactly 500,000", "code": "BIGBUY", "total": 500000, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 50000, "final": 450000 },
+    { "id": "TC-09-06", "type": "edge",     "title": "BIGBUY one below threshold (499,999)", "code": "BIGBUY", "total": 499999, "loggedIn": true, "usesBefore": 0, "expect": "rejected", "error": "chưa đủ giá trị tối thiểu" },
+    { "id": "TC-09-07", "type": "positive", "title": "VIP100 fixed 100,000 at threshold 300,000", "code": "VIP100", "total": 300000, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 100000, "final": 200000 },
+    { "id": "TC-09-08", "type": "positive", "title": "VIP100 on a large order (1,000,000)", "code": "VIP100", "total": 1000000, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 100000, "final": 900000 },
+    { "id": "TC-09-09", "type": "negative", "title": "EXPIRED coupon (C2)", "code": "EXPIRED", "total": 1000000, "loggedIn": true, "usesBefore": 0, "expect": "rejected", "error": "hết hạn" },
+    { "id": "TC-09-10", "type": "negative", "title": "non-existent code (C1)", "code": "NOSUCHCODE", "total": 1000000, "loggedIn": true, "usesBefore": 0, "expect": "rejected", "error": "không tồn tại" },
+    { "id": "TC-09-11", "type": "edge",     "title": "lowercase code is accepted (case-insensitive input)", "code": "save10", "total": 400000, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 40000, "final": 360000 },
+    { "id": "TC-09-12", "type": "edge",     "title": "code with leading/trailing spaces is trimmed", "code": "  VIP100  ", "total": 400000, "loggedIn": true, "usesBefore": 0, "expect": "applied", "discount": 100000, "final": 300000 },
+    { "id": "TC-09-13", "type": "edge",     "title": "order total 0 is below every threshold", "code": "VIP100", "total": 0, "loggedIn": true, "usesBefore": 0, "expect": "rejected", "error": "chưa đủ giá trị tối thiểu" },
+    { "id": "TC-09-14", "type": "negative", "title": "guest (not logged in) must not get a coupon (C4)", "code": "SAVE10", "total": 400000, "loggedIn": false, "usesBefore": 0, "expect": "rejected", "error": "đăng nhập" },
+    { "id": "TC-09-15", "type": "negative", "title": "per-user limit reached: VIP100 already used 2/2 (C5)", "code": "VIP100", "total": 400000, "loggedIn": true, "usesBefore": 2, "expect": "rejected", "error": "giới hạn" },
+    { "id": "TC-09-16", "type": "edge",     "title": "per-user limit not reached: VIP100 used 1/2 still applies", "code": "VIP100", "total": 400000, "loggedIn": true, "usesBefore": 1, "expect": "applied", "discount": 100000, "final": 300000 },
+    { "id": "TC-09-17", "type": "negative", "title": "per-user limit reached: SAVE10 already used 1/1", "code": "SAVE10", "total": 400000, "loggedIn": true, "usesBefore": 1, "expect": "rejected", "error": "giới hạn" }
+  ],
+  "disabledButtonCases": [
+    { "id": "TC-09-18", "title": "empty code keeps the Apply button disabled", "code": "" },
+    { "id": "TC-09-19", "title": "whitespace-only code keeps the Apply button disabled", "code": "     " }
+  ],
+  "e2e": { "id": "TC-09-20", "productId": 1, "code": "VIP100", "price": 30000000, "final": 29900000 }
+}
