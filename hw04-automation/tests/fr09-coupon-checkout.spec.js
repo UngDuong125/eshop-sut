@@ -82,10 +82,18 @@ test.describe('FR-09 Coupon UI state', () => {
     await page.addInitScript((t) => localStorage.setItem('token', t), fresh.token);
 
     await page.goto(`/product/${e2e.productId}`);
-    await page.getByRole('button', { name: 'Thêm vào giỏ hàng' }).click();
+    const addBtn = page.getByRole('button', { name: 'Thêm vào giỏ hàng' });
+    await addBtn.click();
+    // Known SUT defect (FR-06, out of scope here): the FIRST click on "Thêm vào giỏ hàng" is ignored.
+    // The test records it and clicks again so the FR-09 flow can continue.
+    if (!(await page.getByRole('button', { name: 'Đã thêm' }).isVisible())) {
+      test.info().annotations.push({ type: 'known-defect', description: 'FR-06: first "Thêm vào giỏ hàng" click does nothing' });
+      await addBtn.click();
+    }
     await expect(page.getByRole('button', { name: 'Đã thêm' })).toBeVisible();
 
-    await page.goto('/cart');
+    // The cart lives only in React state, so navigate inside the SPA (page.goto would empty it).
+    await page.getByRole('link', { name: 'Giỏ hàng' }).click();
     await page.getByRole('button', { name: 'Tiến hành thanh toán' }).click();
     await expect(page).toHaveURL(/\/checkout/);
     await expect(totalInput(page)).toHaveValue(String(e2e.price));
