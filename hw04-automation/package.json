@@ -1,0 +1,16 @@
+{
+  "name": "hw04-eshop-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HW04 - Automation Testing (Playwright, data-driven, multi-browser) for EShop FR-04, FR-09, FR-17",
+  "scripts": {
+    "test": "playwright test",
+    "test:fr04": "playwright test tests/fr04-profile.spec.js",
+    "test:fr09": "playwright test tests/fr09-coupon-checkout.spec.js",
+    "test:fr17": "playwright test tests/fr17-coupon-admin.spec.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}
