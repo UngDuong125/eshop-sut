@@ -1,0 +1,12 @@
+21a9e41 2026-11-18 10:21:56 +0700 docs: ready-to-post GitHub issues (11), create-issues script, demo script, screenshots for API bugs
+ae5dbdf 2026-11-18 10:19:21 +0700 chore: add 9 Playwright HTML reports (3 features x 3 browsers) with "Run by: 23120034" header
+bca19b7 2026-11-18 10:19:15 +0700 docs: README summary, bug report with screenshots, review/gap analysis, AI audit log
+4025b3f 2026-11-18 10:19:15 +0700 fix(FR-17): handle alert dialogs in a listener - login tests hung for 40s
+a48eb8a 2026-11-18 10:19:15 +0700 test(FR-17): list, delete, admin login and access-control tests
+fd41f74 2026-11-18 10:19:15 +0700 test(FR-17): data-driven coupon creation rules (15 cases)
+40f548e 2026-11-18 10:19:14 +0700 test(FR-09): expiry-date boundary (yesterday / today / tomorrow) for condition C2
+bffa926 2026-11-18 10:19:14 +0700 fix(FR-09): e2e test - navigate inside the SPA and tolerate ignored first add-to-cart click
+1ace0fb 2026-11-18 10:19:14 +0700 test(FR-09): coupon rules C1..C5 data-driven (17 cases), UI state and e2e checkout
+e24256c 2026-11-18 10:19:14 +0700 test(FR-04): read-only email, role escalation, API validation and session tests
+bd085cb 2026-11-18 10:19:13 +0700 test(FR-04): data-driven profile validation (13 cases: phone boundaries, name, address)
+a92db5d 2026-11-18 10:19:13 +0700 chore: scaffold Playwright project (3 browsers, "Run by" report title, helpers, matrix runner)
