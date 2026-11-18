@@ -1,0 +1,18 @@
+{
+  "baseline": { "name": "Baseline User", "phone": "0900000001", "shipping_address": "1 Baseline Street" },
+  "cases": [
+    { "id": "TC-04-01", "type": "positive", "title": "valid 10-digit phone starting with 0", "name": "Nguyen Van A", "phone": "0912345678", "address": "12 Nguyen Hue, Q1", "expect": "accepted" },
+    { "id": "TC-04-02", "type": "edge",     "title": "boundary: valid 11-digit phone (upper bound)", "name": "Nguyen Van A", "phone": "09123456789", "address": "12 Nguyen Hue, Q1", "expect": "accepted" },
+    { "id": "TC-04-03", "type": "negative", "title": "boundary: 9-digit phone (below lower bound)", "name": "Nguyen Van A", "phone": "091234567", "address": "12 Nguyen Hue, Q1", "expect": "rejected" },
+    { "id": "TC-04-04", "type": "negative", "title": "boundary: 12-digit phone (above upper bound)", "name": "Nguyen Van A", "phone": "091234567890", "address": "12 Nguyen Hue, Q1", "expect": "rejected" },
+    { "id": "TC-04-05", "type": "negative", "title": "10-digit phone NOT starting with 0", "name": "Nguyen Van A", "phone": "9123456789", "address": "12 Nguyen Hue, Q1", "expect": "rejected" },
+    { "id": "TC-04-06", "type": "negative", "title": "9-digit phone NOT starting with 0", "name": "Nguyen Van A", "phone": "912345678", "address": "12 Nguyen Hue, Q1", "expect": "rejected" },
+    { "id": "TC-04-07", "type": "negative", "title": "phone containing letters", "name": "Nguyen Van A", "phone": "09abc45678", "address": "12 Nguyen Hue, Q1", "expect": "rejected" },
+    { "id": "TC-04-08", "type": "negative", "title": "phone containing spaces", "name": "Nguyen Van A", "phone": "0912 345 678", "address": "12 Nguyen Hue, Q1", "expect": "rejected" },
+    { "id": "TC-04-09", "type": "positive", "title": "Vietnamese diacritics in name", "name": "Nguyễn Thị Ánh Tuyết", "phone": "0987654321", "address": "45 Lê Lợi, Quận 1", "expect": "accepted" },
+    { "id": "TC-04-10", "type": "negative", "title": "empty name is blocked by HTML5 required", "name": "", "phone": "0912345678", "address": "12 Nguyen Hue, Q1", "expect": "blocked-by-html5" },
+    { "id": "TC-04-11", "type": "edge",     "title": "very long address (500 chars)", "name": "Nguyen Van A", "phone": "0912345678", "address": "__REPEAT_A_500__", "expect": "accepted" },
+    { "id": "TC-04-12", "type": "edge",     "title": "HTML/script in address is stored as plain text", "name": "Nguyen Van A", "phone": "0912345678", "address": "<img src=x onerror=alert(1)>", "expect": "accepted" },
+    { "id": "TC-04-13", "type": "edge",     "title": "empty address is allowed (optional field)", "name": "Nguyen Van A", "phone": "0912345678", "address": "", "expect": "accepted" }
+  ]
+}
