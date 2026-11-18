@@ -61,6 +61,8 @@ Tests share one SQLite DB, so they run serially (`workers: 1`). Each test create
 and cleans up, so repeated runs do not collide. To reset the SUT: `node database.js` in `eshop-sut/backend`.
 
 ## Documents
+- `REPORT.md` / `REPORT.pdf` – main report (automation report + review/gap analysis)
+- `docs/ai-audit-log.md` / `.pdf`, `docs/ai-critique.md` / `.pdf` – AI Audit Report (verbatim prompts) and AI Critique
 - `docs/review-gap-analysis.md` – review of the AI-generated scripts (what the AI got wrong/missed and why)
 - `docs/bug-report.md` + `docs/screenshots/` – bugs with evidence
 - `docs/ai-audit-log.md`, `docs/ai-critique-notes.md` – AI Audit Report and critique notes

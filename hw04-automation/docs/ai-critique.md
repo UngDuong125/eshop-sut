@@ -1,0 +1,4 @@
+# AI Critique – HW04 (23120034)
+
+
+Phần code đầu tiên do AI sinh ra đã bị treo bởi alert `waitForEvent('dialog')`, sau đó AI đã xem lại và chỉnh sửa lại mã nguồn. Nguyên nhân là do không có phản hồi thực thi ở bản nháp đầu tiên; Playwright chạy runtime detail. Cùng với đó, spec không nói gì về cách cài đặt giỏ hàng hay hành vi số lần click, nên Claude đã tự giả định rằng việc "thêm vào giỏ hàng" chỉ cần một cú click và page.goto('/cart') sẽ giữ nguyên giỏ hàng; cả hai điều này đều sai đối với hệ thống đang kiểm thử (SUT) này. Và một prompt chung chung ("viết test cho mã giảm giá") không ép buộc AI phải "suy ra kết quả kỳ vọng chỉ từ tài liệu SRS". Như vậy, Claude vẫn là một công cụ mạnh mẽ giúp hỗ trợ cho việc sinh test case, test script và chạy các kiểm thử tự động, nhưng đồng thời cũng yêu cầu các đặc tả cần phải chi tiết và cụ thể hơn. Cùng với đó là việc giám sát các mã nguồn và ca kiểm thử do AI sinh ra
